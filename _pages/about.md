@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Hi, I'm Ansori
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pp.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  # more_info: >
+  #   <p>555 your office number</p>
+  #   <p>123 your address street</p>
+  #   <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Bachelor of Applied Science in Electronics Engineering with a solid foundation in embedded systems, control systems, and artificial intelligence. I have a strong passion for robotics, especially in the field of marine robotics, where I consistently contribute to research and competitions involving Autonomous Underwater Vehicles (AUVs), Remotely Operated Vehicles (ROVs), and Autonomous Surface Vehicles (ASVs).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Throughout my academic and professional journey, I have demonstrated consistency in pursuing hands-on experience with intelligent robotic systems from control systems and embedded programming to computer vision and ROS-based autonomy. I have led and been part of several national-level marine robotics competitions and offshore collaborative projects, including working on actual rigs and real-world surveys, and remained consistent in this field through my final project. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I enjoy working at the intersection of hardware and intelligent software, building solutions that operate autonomously in complex environments. I am committed to continuous learning and excited to contribute to future innovations in the robotics and marine technology industries.
