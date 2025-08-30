@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -427,6 +427,11 @@ ninja.data = [{
           description: "An upgraded prototype of an affordable automatic aerator system for traditional fish farmers",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_venambak_autove/";
+            },},{id: "projects-e-auv-eepis-autonomous-underwater-vehicle-kri-2023",
+          title: 'E-AUV (Eepis Autonomous Underwater Vehicle) – KRI 2023',
+          description: "Fully autonomous underwater vehicle for the Indonesian Underwater Robot Contest (KRBAI) 2023",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/emosver/";
             },},{
         id: 'social-email',
         title: 'email',
