@@ -1,0 +1,43 @@
+---
+layout: page
+title: Bicopter Position Control System – Arduino PID Control
+description: Development of a bicopter position control system using Arduino Nano with PID control and Kalman filter.
+img: assets/img/projects/academic/bicopterpid/bicopter.png
+importance: 1
+category: academic
+---
+
+## Bicopter Position Control System with Arduino-Based PID Control
+
+{% include figure.liquid path="assets/img/projects/academic/bicopterpid/bicopter.png" title="Bicopter Prototype" class="img-fluid rounded z-depth-1" %}
+
+### Overview
+Developed a **bicopter position control system** using an **Arduino Nano**.  
+Implemented **PID control** based on **MPU6050 sensor data** processed with a **Kalman filter**.  
+System output controls two **brushless motors** via **ESCs**, with real-time monitoring on a **16x2 LCD**.  
+
+### Contribution
+- Coded the **PID control algorithm** and integrated **Kalman filtering**.  
+- Connected and configured **MPU6050** via I2C, ESCs, potentiometer, and LCD.  
+- Tuned PID parameters through testing to optimize response.  
+
+### Results
+- Achieved stable response with:
+  - Rise time: **0.56 s**  
+  - Overshoot: **9.58%**  
+  - Settling time: **5.37 s**  
+- Final PID values: **Kp = 0.7, Ti = 1.2, Td = 0.5**  
+- System responded well to external disturbances with minimal steady-state error.  
+
+---
+
+## System Diagram & Experimental Results
+
+<div class="row">
+  <div class="col-md-6">
+    {% include figure.liquid path="assets/img/projects/academic/bicopterpid/diagram.png" title="System Diagram" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-md-6">
+    {% include figure.liquid path="assets/img/projects/academic/bicopterpid/hasil.png" title="Experimental Results" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
