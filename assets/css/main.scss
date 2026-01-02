@@ -23,3 +23,24 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+// Custom: Always show navbar on mobile
+.navbar-toggler {
+  display: none !important;
+}
+
+.navbar-collapse {
+  display: flex !important;
+}
+
+@media (max-width: 575px) {
+  .navbar-nav {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin: 0 5px;
+  }
+}
