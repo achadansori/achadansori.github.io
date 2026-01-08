@@ -24,12 +24,10 @@ latest_posts:
   limit: 3
 ---
 
-## About Me  
+## About Me
 
-I am a **Bachelor of Applied Science in Electronics Engineering** from **Politeknik Elektronika Negeri Surabaya (PENS)** with expertise in embedded systems, control systems, and artificial intelligence. My passion lies in **marine robotics**, with experience in developing systems such as AUVs, ROVs, and ASVs.  
+I am a **Bachelor of Applied Science in Electronics Engineering** from **Politeknik Elektronika Negeri Surabaya (PENS)** with expertise in embedded systems, control systems, and artificial intelligence. My passion lies in **robotics engineering**, with experience spanning diverse applications including marine robotics (AUVs, ROVs, ASVs) and demolition robotics.
 
-I have gained strong **hands-on experience** in intelligent robotic systems, from embedded programming and control systems to computer vision and ROS-based autonomy. I have led and contributed to several **national robotics competitions**, **real-world projects**, and **industry internships**, collaborating with both academic and professional partners in advancing robotics applications.  
+Currently, I work as a **demolition robot technician**, developing and deploying robotic systems for challenging demolition tasks. I have gained strong **hands-on experience** in intelligent robotic systems, from embedded programming and control systems to computer vision and autonomy. I have led and contributed to several **national robotics competitions**, **real-world projects**, and **industry internships**, collaborating with both academic and professional partners in advancing robotics applications.
 
-My **ikigai is in robotics.** I believe robotics is the space where my skills, passion, and purpose converge. I aspire to become a **professional in robotics**, contributing not only in academia but also in industry, by building autonomous systems that bring real impact in complex environments.  
-
-📂 **[View my complete projects portfolio →](https://achadansori.github.io/projects/)**
+My **ikigai is in robotics.** I believe robotics is the space where my skills, passion, and purpose converge. I aspire to continue growing as a **robotics professional**, contributing not only in academia but also in industry, by building autonomous systems that bring real impact across diverse and complex environments.  
