@@ -26,8 +26,10 @@ latest_posts:
 
 ## About Me
 
-I am a **Bachelor of Applied Science in Electronics Engineering** from **Politeknik Elektronika Negeri Surabaya (PENS)** with expertise in embedded systems, control systems, and artificial intelligence. My passion lies in **robotics engineering**, with experience spanning diverse applications including marine robotics (AUVs, ROVs, ASVs) and demolition robotics.
+I am a Bachelor of Applied Science in Electronics Engineering from Politeknik Elektronika Negeri Surabaya (PENS), specializing in embedded systems, control systems, and artificial intelligence. My expertise spans across robotics engineering, with hands-on experience in marine robotics and demolition robotics applications.
 
-Currently, I work as a **demolition robot technician**, developing and deploying robotic systems for challenging demolition tasks. I have gained strong **hands-on experience** in intelligent robotic systems, from embedded programming and control systems to computer vision and autonomy. I have led and contributed to several **national robotics competitions**, **real-world projects**, and **industry internships**, collaborating with both academic and professional partners in advancing robotics applications.
+Currently, I work as a demolition robot technician, where I develop and deploy robotic systems for demanding operational environments. My experience covers the full spectrum of intelligent robotics, from low-level embedded programming and control systems to high-level computer vision and autonomous decision-making.
 
-My **ikigai is in robotics.** I believe robotics is the space where my skills, passion, and purpose converge. I aspire to continue growing as a **robotics professional**, contributing not only in academia but also in industry, by building autonomous systems that bring real impact across diverse and complex environments.  
+Throughout my career, I have actively participated in robotics competitions, industry projects, and collaborative research initiatives. I work with diverse teams to push the boundaries of what robotic systems can achieve in challenging real-world scenarios.
+
+My ikigai is in robotics, where my technical skills, passion, and purpose converge. I am fascinated by how robotics bridges multiple disciplines to create intelligent systems that extend human capabilities beyond physical and cognitive limitations. I see robotics as more than just technology; it's a medium to solve complex problems, enhance human life, and explore new frontiers. I aspire to continue growing as a robotics professional, advancing robotic systems that bring meaningful impact to society.  
