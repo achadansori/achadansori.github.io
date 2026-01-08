@@ -30,15 +30,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-potensi-energi-terbarukan-lepas-pantai-di-indonesia",
+        },{id: "post-indonesia-39-s-offshore-renewable-energy-potential",
         
-          title: "Potensi Energi Terbarukan Lepas Pantai di Indonesia",
+          title: "Indonesia&#39;s Offshore Renewable Energy Potential",
         
-        description: "Eksplorasi potensi besar energi terbarukan lepas pantai Indonesia untuk masa depan berkelanjutan",
+        description: "Exploring Indonesia&#39;s vast offshore renewable energy potential for a sustainable future",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2025/energi-terbarukan-lepas-pantai-indonesia/";
+          
+        },
+      },{id: "post-a-complete-guide-to-yolov11-object-detection-from-theory-to-deployment",
+        
+          title: "A Complete Guide to YOLOv11 Object Detection - From Theory to Deployment",
+        
+        description: "Comprehensive tutorial on implementing YOLOv11 for real-time object detection, including architecture insights, custom training, optimization, and production deployment",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/complete-guide-yolov11-object-detection/";
           
         },
       },{id: "books-the-godfather",
