@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-indonesia-39-s-offshore-renewable-energy-potential",
+        },{id: "post-finding-your-ikigai-in-robotics-engineering",
+        
+          title: "Finding Your Ikigai in Robotics Engineering",
+        
+        description: "Discovering purpose and fulfillment at the intersection of passion, profession, and contribution in robotics",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/finding-your-ikigai-in-robotics/";
+          
+        },
+      },{id: "post-indonesia-39-s-offshore-renewable-energy-potential",
         
           title: "Indonesia&#39;s Offshore Renewable Energy Potential",
         
