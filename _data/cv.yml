@@ -1,72 +1,84 @@
 - title: Education
   type: time_table
   contents:
-    - title: Bachelor of Applied Electronics Engineering
-      institution: Politeknik Elektronika Negeri Surabaya, Indonesia
+    - title: Bachelor of Applied Science, Electronics Engineering
+      institution: Politeknik Elektronika Negeri Surabaya (PENS), Indonesia
       year: 2021 - 2025
+      description:
+        - "Advisor: Arif Irwansyah (Director of PENS)"
+        - "Thesis: Autonomous Surface Vehicle with Collision Avoidance for Offshore Energy Exploration"
+    - title: Machine Learning Cohort
+      institution: Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka
+      year: Aug - Dec 2024
+      description:
+        - Completed 5-month intensive program in Machine Learning, Deep Learning, TensorFlow, and Computer Vision
+        - Led capstone project "InSight" — YOLO-based defect detection system for SME quality control on Jetson Nano
 
 - title: Experience
   type: time_table
   contents:
+    - title: Research and Development Engineer (Contract)
+      institution: PT Aldzama, Gresik, Indonesia
+      year: Feb 2026 - Present
+      description:
+        - Researching and developing robotic systems for industrial demolition applications
+        - Designing embedded control architectures and system integration for heavy-duty robotic platforms
+        - Collaborating with cross-functional teams to transition prototypes into field-ready solutions
+
+    - title: Demolition Robot Technician (Contract)
+      institution: PT Aldzama, Gresik, Indonesia
+      year: Sep 2025 - Jan 2026
+      description:
+        - Developed a custom control unit for demolition robots from scratch, reducing dependency on expensive OEM parts
+        - Reverse-engineered and modified the original remote control system to integrate with in-house built controller
+        - Promoted to R&D Engineer after 3 months based on demonstrated engineering capability
+
     - title: Electronics Engineer (Internship)
       institution: PT Venambak Kail Dipantara, Sidoarjo, Indonesia
-      year: Jan - Jun 2025
+      year: Dec 2024 - May 2025
       description:
-        - Designed PCB layout for FeederVE control box.
-        - Developed code and electronic systems for AutoVE (autonomous mobile aerator).
-        - Contributed to initial production of 50+ FeederVE control boxes.
-        - Resolved electromagnetic interference issues in BoxVE system.
-
-    - title: Machine Learning Cohort
-      institution: Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka (Remote)
-      year: Aug - Dec 2024
-      description:
-        - Completed 5-month intensive Independent Study in ML, DL, TensorFlow, CV, and Data Analysis.
-        - Strengthened soft skills = Growth Mindset, Adaptability, Critical Thinking, Project Management.
-        - Led Capstone Project team to develop InSight, a smart defect detection system for SMEs.
-        - Implemented YOLO object detection optimized on Jetson Nano for real-time defect classification.
+        - Redesigned PCB layout with ESP32 for FeederVE control box, handled full production cycle for 50+ units
+        - Developed embedded software and electronic systems for AutoVE (autonomous mobile aerator)
+        - Resolved electromagnetic interference issues on BoxVE system through PCB redesign
 
     - title: ROV Pilot and Engineer (Collaborative Project)
       institution: PT Pertamina Hulu Energi West Madura Offshore, RIG Taurus, Madura, Indonesia
       year: Jul - Aug 2024
       description:
-        - Operated and navigated ROVs for underwater RIG hull inspections in offshore environments.
-        - Maintained and troubleshooted ROV control systems, cameras, and sensors.
-        - Conducted technical testing for ROV readiness and reliability.
-        - Collected visual & sensor data for hull condition assessment.
-        - Compiled technical reports to support further maintenance actions.
+        - Operated ROVs for underwater hull inspections at offshore RIG, inspecting 3 RIG points at 20m depth
+        - Performed maintenance and troubleshooting on ROV control systems, cameras, and sensors
+        - Collected and analyzed visual/sensor data for hull condition assessment
 
-    - title: Maintenance and Improvement Intern
+    - title: Maintenance and Improvement Engineer (Internship)
       institution: PT Toshin Prima Fine Blanking (Indoprima Group), Surabaya, Indonesia
       year: Feb - Jul 2024
       description:
-        - Designed Computer Vision system for QC using deep learning on embedded PC.
-        - Built IoT monitoring for Chiller Machine (hardware & web integration).
-        - Performed maintenance and repairs of blanking machines.
+        - Developed and deployed YOLOv4-based visual inspection system on Jetson Nano achieving ~29 FPS
+        - Built IoT monitoring system for 2 critical factory chiller units using Raspberry Pi with web dashboard
+        - Performed routine maintenance and repair of industrial fine blanking machines
 
-    - title: Embedded Programmer
-      institution: PENSHIP TEAM PENS, Surabaya, Indonesia
-      year: Mar 2023 - Dec 2024
+    - title: Embedded Developer
+      institution: Penship EEPIS Marine Robotics Team, Surabaya, Indonesia
+      year: Mar 2023 - Nov 2024
       description:
-        - Developed software for AUV & ASV autonomous operation (CV, microcontroller, propulsion).
-        - Designed control & communication algorithms for multi-sensor integration.
-        - Built Robot Operating System architecture for streamlined vehicle development.
+        - Built entire electrical and software systems from zero, progressing from Python+MAVLink to ROS-based autonomy stack
+        - Developed computer vision pipelines from HSV-based detection to deep learning (YOLO) for AUV and ASV
+        - Achieved 3rd Place National in KRBAI and 2nd Place Regional
 
     - title: General Manager
-      institution: PENSHIP TEAM PENS, Surabaya, Indonesia
-      year: Mar 2023 - Jan 2024
+      institution: Penship EEPIS Marine Robotics Team, Surabaya, Indonesia
+      year: Mar 2023 - Dec 2023
       description:
-        - Planned, directed, and monitored team tasks & mission timelines.
-        - Conducted weekly evaluations and proposed improvements.
-        - Resolved conflicts and maintained team synergy.
+        - Led 15-member team with 4 robot platforms, establishing weekly meeting culture from scratch
+        - Aligned hardware, software, and mechanical workstreams to competition deadlines
 
-    - title: Electric Specialist
-      institution: PENSHIP TEAM PENS, Surabaya, Indonesia
+    - title: Hardware Specialist
+      institution: Penship EEPIS Marine Robotics Team, Surabaya, Indonesia
       year: Mar 2022 - Feb 2023
       description:
-        - Designed electrical systems of Autonomous Semi Submarine Vehicle.
-        - Assisted software team in microcontroller programming for missions.
-        - Designed PCBs based on mechanical design requirements.
+        - Engineered electrical systems for Autonomous Semi Submarine Vehicle — propulsion, power management, and waterproofing
+        - Designed custom PCBs aligned with mechanical specifications for underwater operation
+        - Supported software team with microcontroller programming for mission-based autonomous movements
 
 - title: Organization & Activities
   type: time_table
@@ -78,47 +90,58 @@
       institution: EBIO PENS, Surabaya, Indonesia
       year: Feb 2022 - Jan 2024
       description:
-        - Created monthly Instagram content & designed event posters.
-        - Led publicity, decoration, and documentation team for "Peduli Desa Jilid IX".
+        - Created monthly Instagram content & designed event posters
+        - Led publicity, decoration, and documentation team for "Peduli Desa Jilid IX"
 
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - Most Active and Best Design, Kaizen Event (PT Aldzama)
     - year: 2025
       items:
-        - 2nd Place, 2nd Final Project Competition Applied Electronics Engineering Undergraduate Study Program (FPC 2025, PENS)
+        - 2nd Place, Final Project Competition Applied Electronics Engineering (PENS)
     - year: 2024
       items:
-        - 3rd Place, National Underwater Robotics Competition (Indonesia Robot Contest, Puspresnas Kemendikbudristek)
-        - 2nd Place, Regional Underwater Robotics Competition (Indonesia Robot Contest, Puspresnas Kemendikbudristek)
+        - Funded Proposal, Pekan Kreativitas Mahasiswa (PKM) — Ministry of Education
+        - 3rd Place National, Underwater Robotics Competition (KRBAI) — Kontes Robot Indonesia
+        - 2nd Place Region 2, Underwater Robotics Competition (KRBAI) — Kontes Robot Indonesia
         - Finalist, Autonomous Surface Vehicle Competition (National Unmanned Fast Boat Contest)
     - year: 2023
       items:
         - Finalist, Autonomous Tourism Surface Vehicle Competition (National Unmanned Fast Boat Contest)
-        - Finalist, Boat Race Competition (COMET, Institut Teknologi Perkapalan Nasional Surabaya)
+        - Finalist, Boat Race Competition (COMET, National Shipbuilding Institute of Surabaya)
     - year: 2022
       items:
         - Finalist, Autonomous Semi Submarine Vehicle Competition (National Unmanned Fast Boat Contest)
-        - Finalist, UI/UX Competition (UPN Veteran Jawa Timur, Fasilkom Fest)
+        - Finalist, UI/UX Competition (UPN Veteran Jawa Timur)
 
-- title: Skills
-  type: list
+- title: Technical Skills
+  type: nested_list
   contents:
-    - C, C++, Python
-    - PCB Design, Electronic Devices, Simulation
-    - Microcontrollers, Control Systems, Design
-    - Robotics OS & Linux OS
-    - Computer Vision & Artificial Intelligence
-    - Problem-solving, Project Planning, Project Management
+    - title: Programming
+      items:
+        - Python, C/C++, JavaScript, Bash
+    - title: Embedded Systems
+      items:
+        - STM32, ESP32, Arduino, Raspberry Pi, Jetson Nano, MAVLink, PID Control, UART/SPI/I2C, RTOS
+    - title: Robotics & Autonomy
+      items:
+        - ROS, OpenCV, YOLO, TensorFlow, PyTorch, Sensor Integration, Navigation, Linux
+    - title: Electrical
+      items:
+        - PCB Design, Soldering & Prototyping, Wiring & Panel Assembly, Motor Drivers, Power Distribution, Oscilloscope & Multimeter
+    - title: Internet of Things
+      items:
+        - IoT Monitoring Systems, Web Dashboard, MQTT, Flutter, React, Git
 
 - title: Certifications
   type: time_table
   contents:
     - year: 2024 - 2027
       items:
-        - Sea Survival and Offshore Emergency Procedure  
-          (PT Global Saftindo — Credential ID:GS-ADM-024-3594)
-
+        - "Sea Survival and Offshore Emergency Procedure (PT Global Saftindo — Credential ID: GS-ADM-024-3594)"
 
 - title: Academic Interests
   type: nested_list
@@ -136,7 +159,7 @@
         - IoT Monitoring Systems
         - Integration with Industrial Automation
 
-- title: Other Interests (Hobbies)
+- title: Other Interests
   type: list
   contents:
-    - Trail Running, Hiking, Running, Reading, Graphic design
+    - Trail Running, Hiking, Reading
