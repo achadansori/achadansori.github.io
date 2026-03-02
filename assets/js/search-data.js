@@ -30,11 +30,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-finding-your-ikigai-in-robotics-engineering",
+        },{id: "post-finding-your-ikigai",
         
-          title: "Finding Your Ikigai in Robotics Engineering",
+          title: "Finding Your Ikigai",
         
-        description: "Discovering purpose and fulfillment at the intersection of passion, profession, and contribution in robotics",
+        description: "When you find what you truly love, everything else follows",
         section: "Posts",
         handler: () => {
           
