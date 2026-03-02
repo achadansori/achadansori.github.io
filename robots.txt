@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://achadansori.github.io/sitemap.xml
+Sitemap: https://achadansori.com/sitemap.xml
