@@ -103,3 +103,13 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+      - name: Deploy to cPanel (Rumah Web) 📦
+        if: github.event_name != 'pull_request'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: _site/
+          server-dir: public_html/achadansori.com/achadansori/
