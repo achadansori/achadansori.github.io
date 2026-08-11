@@ -3,7 +3,7 @@ layout: page
 title: Smart Rover – Version 1 & 2
 description: A personal robotics project developing an omnidirectional autonomous ground vehicle, enhanced with robotic arm and computer vision.
 img: assets/img/projects/fun/smartrover/smartrover.png
-importance: 1
+importance: 3
 category: fun
 ---
 

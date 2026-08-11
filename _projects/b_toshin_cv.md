@@ -8,50 +8,57 @@ category: work
 related_publications: false
 ---
 
-## Defect Detection with Deep Learning Computer Vision in Jetson Nano  
-**Internship Project at PT Toshin Prima Fine Blanking**  
+## Real-Time Defect Detection on Jetson Nano
+
+> Developed a YOLOv4-based deep learning system running at 29.8 FPS on edge hardware for automated quality control inspection, tested as a working prototype at the QC station.
 
 <div class="text-center my-3">
   <img src="/assets/img/projects/work/toshin_cv/fotobersama.jpg"
        class="img-fluid rounded z-depth-1"
        width="100%"
        height="auto"
-       title="Internship Team Photo"
-       loading="eager"
-       onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+       title="Internship Team at PT Toshin"
+       loading="eager">
 </div>
 
-### Overview  
-A real-time defect detection system was developed using **deep learning and computer vision**, deployed on the **NVIDIA Jetson Nano** platform.  
-The system was designed to assist the **Quality Control (QC)** process in a manufacturing environment by automatically identifying defective products based on **visual anomalies**.  
-This project was carried out during a **6-month internship at PT Toshin Prima Fine Blanking**.  
+### The Problem
 
-### Contribution  
-- Designed and trained a **custom YOLOv4 model** using labeled datasets of product defects.  
-- Optimized the model with **TensorRT** for high-speed inference on Jetson Nano.  
-- Integrated the system with a **Logitech Brio camera** for high-resolution image capture.  
-- Developed a **Python-based application** to visualize, classify, and log detection results.  
-- Deployed the system on the **production line** to assist QC operators during live inspections.  
+At **PT Toshin Prima Fine Blanking**, quality control was done manually by human operators — slow, inconsistent, and prone to fatigue-related errors. The factory needed an automated, real-time solution that could run on affordable hardware without cloud dependency.
 
-### Result  
-- Achieved **real-time detection speed of up to 29.8 FPS** with an **F1-score of 0.9945**.  
-- Successfully detected **multiple defect types** with high precision and reduced manual inspection time.  
-- Contributed to improving **product quality** while **minimizing human error** in the QC process.  
+### What I Built
+
+An end-to-end visual inspection pipeline: from data collection and model training to prototype testing.
+
+- Collected and labeled **product defect datasets** from the actual production line
+- Trained a **custom YOLOv4 model** optimized with **TensorRT** for edge inference
+- Integrated with **Logitech Brio camera** for high-resolution image capture
+- Built a **Python application** for real-time visualization, classification, and logging
+- Tested the system on **NVIDIA Jetson Nano** at the QC station as a working prototype
+
+`YOLOv4` `TensorRT` `Jetson Nano` `Python` `OpenCV` `Deep Learning` `Edge AI`
+
+### Results
+
+| Metric | Value |
+|--------|-------|
+| Inference Speed | **29.8 FPS** |
+| F1-Score | **0.9945** |
+| Deployment | Prototype (QC station) |
+| Hardware Cost | ~$150 (Jetson Nano) |
+
+- Detected multiple defect types with near-perfect accuracy
+- Reduced manual inspection time significantly
+- System ran **fully offline** — no cloud required
 
 ---
 
-## Documentation  
+## Detection Example
 
 <div class="text-center my-3">
   <img src="/assets/img/projects/work/toshin_cv/defect.jpg"
        class="img-fluid rounded z-depth-1"
        width="100%"
        height="auto"
-       title="Internship Team Photo"
-       loading="eager"
-       onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-</div>
-
-<div class="caption">
-  Selected documentation from the real-time defect detection system deployed on Jetson Nano at PT Toshin Prima Fine Blanking.
+       title="Defect Detection Result"
+       loading="eager">
 </div>

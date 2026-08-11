@@ -3,44 +3,49 @@ layout: page
 title: Chiller Monitoring Webbased
 description: A web-based IoT system to monitor chiller machine operations in real time
 img: assets/img/projects/work/toshin_chiller/fotobersama.jpg
-importance: 1
+importance: 2
 category: work
 ---
 
-## Chiller Monitoring Webbased
+## IoT Chiller Monitoring System
 
-{% include figure.liquid path="assets/img/projects/work/toshin_chiller/diagram.jpg" title="System Diagram" class="img-fluid rounded z-depth-1" %}
+> Built an end-to-end IoT monitoring system for 2 critical factory chiller units — from sensor hardware to web dashboard — preventing unplanned downtime on the production floor.
 
-### Overview
-As part of a 6-month internship at **PT Toshin Prima Fine Blanking**, a web-based IoT system was developed to monitor the operational status of a chiller machine in real time.  
-The goal was to support predictive maintenance and minimize unexpected downtime by enabling continuous remote monitoring.
+{% include figure.liquid path="assets/img/projects/work/toshin_chiller/diagram.jpg" title="System Architecture" class="img-fluid rounded z-depth-1" %}
 
-### Contribution
-- Designed and built a sensor system using **Arduino** to collect temperature, pressure, and current data from the chiller.  
-- Connected the Arduino to a **Raspberry Pi**, which served as the local database and processing unit.  
-- Developed **serial communication and data logging** scripts using Python.  
-- Built a **web-based dashboard** using Flask (Python) and JavaScript to visualize real-time data.  
-- Deployed the system on the local factory network for access by the maintenance division.  
+### The Problem
 
-### Result
-- Enabled **real-time remote monitoring** of the chiller machine, reducing downtime risk.  
-- Helped the maintenance team to **detect early warning signs** of failure.  
-- Improved **maintenance planning** and performance tracking within the factory.  
+The **blanking machines** at PT Toshin depend on chiller units for cooling. When a chiller fails unexpectedly, the entire production line stops. The maintenance team had **no real-time visibility** into chiller health — they only knew about problems after a breakdown.
+
+### What I Built
+
+A full-stack IoT monitoring system: hardware sensors, data pipeline, and live web dashboard.
+
+- Designed sensor nodes with **ESP32** to collect temperature, pressure, and current data from 2 chiller units
+- Connected to **Raspberry Pi** as local server — running **MySQL** for data storage and **PHP** for backend
+- Built a **web dashboard** for real-time data visualization
+- Deployed on the **factory local network** — accessible by maintenance team from any browser
+
+`ESP32` `Raspberry Pi` `MySQL` `PHP` `IoT`
+
+### Impact
+
+- Enabled **24/7 remote monitoring** — maintenance team sees anomalies before they become failures
+- Helped detect **early warning patterns** in temperature and pressure fluctuations
+- Reduced risk of **factory-wide production downtime** caused by chiller failure
 
 ---
 
 ## Documentation
+
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/toshin_chiller/chiller-1.jpg" title="Chiller Monitoring Hardware" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/toshin_chiller/chiller-1.jpg" title="Hardware Setup" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/work/toshin_chiller/chiller-2.jpg" title="Web Dashboard" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/toshin_chiller/chiller-3.jpg" title="Sensor Integration" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/toshin_chiller/chiller-3.jpg" title="Sensor on Chiller" class="img-fluid rounded z-depth-1" %}
   </div>
-</div>
-<div class="caption">
-  Documentation photos: (Left) hardware setup, (Middle) dashboard visualization, (Right) sensor installation on the chiller.
 </div>

@@ -3,7 +3,7 @@ layout: page
 title: Smartdoorlock – Fingerprint and PIN Authentication
 description: A functional smart doorlock system with multi-factor authentication, developed as part of the Sensors and Actuators course project.
 img: assets/img/projects/academic/smartdoorlock/cover.jpg
-importance: 1
+importance: 4
 category: academic
 ---
 

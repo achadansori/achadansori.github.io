@@ -3,28 +3,44 @@ layout: page
 title: Affordable Smart Feeder for Farmers
 description: A solar-powered smart feeder to automate the feeding process for traditional farmers
 img: assets/img/projects/work/venambak_feeederve/feederve.jpg
-importance: 1
+importance: 2
 category: work
 ---
 
-## Affordable Smart Feeder for Farmers
+## Solar-Powered Smart Feeder for Aquaculture
 
-{% include figure.liquid path="assets/img/projects/work/venambak_feeederve/kelengkapan-feederve.png" title="System Completeness" class="img-fluid rounded z-depth-1" %}
+> Redesigned the electronics and PCB for a solar-powered automated fish feeder, then took it from prototype to production — 50+ units assembled and deployed to rural farmers.
 
-### Overview
-During an internship at **Venambak**, a startup focused on aquaculture and agricultural technology, I was involved in developing a **solar-powered smart feeder** designed to assist traditional farmers in automating the feeding process.  
-The system was built to operate in remote or off-grid areas using renewable solar energy, aiming to reduce manual labor and improve feeding consistency.
+{% include figure.liquid path="assets/img/projects/work/venambak_feeederve/kelengkapan-feederve.png" title="FeederVE Components" class="img-fluid rounded z-depth-1" %}
 
-### Contribution
-- Continued and improved the system using an **ESP32 microcontroller**, and redesigned the PCB from double-layer to single-layer to accelerate the production process.  
-- Integrated a **solar panel** to enable fully off-grid operation.  
-- Identified and resolved **EMI (Electromagnetic Interference)** issues that were affecting system stability.  
-- Participated in an initial **mini-production phase** over 5 months, resulting in the successful assembly of approximately 50 smart feeder electronic units, while continuing R&D for further improvements.  
+### The Problem
 
-### Result
-- The system operated reliably on **solar power**, with improved performance and stability.  
-- Simplified PCB design enabled faster and more efficient production.  
-- Provided an **affordable, scalable, and sustainable solution** for traditional and smallholder farmers in rural areas.  
+Traditional fish farmers in rural Indonesia feed their fish manually — multiple times a day, with no automation. Existing smart feeders on the market are too expensive for smallholder farmers. **Venambak** needed an affordable, solar-powered solution that could be mass-produced.
+
+### What I Built
+
+Took over an existing prototype and re-engineered it for production readiness.
+
+- Redesigned **PCB layout from double-layer to single-layer** using ESP32 — cutting production cost and time
+- Integrated **solar panel** charging system for fully off-grid operation
+- Diagnosed and fixed **EMI (electromagnetic interference)** issues causing unstable sensor readings
+- Handled the full **production cycle**: PCB assembly, wiring, panel box integration, and QC testing
+- Produced **50+ units** over 5 months, each field-tested before deployment
+
+`ESP32` `PCB Design` `Solar Power` `EMI Troubleshooting` `Production Engineering`
+
+### Impact
+
+| Metric | Value |
+|--------|-------|
+| Units Produced | **50+** |
+| Power Source | Solar (off-grid) |
+| PCB Layers | 2 → 1 (cost reduction) |
+| Deployment | Rural fish farms |
+
+- Enabled **automated feeding** for farmers who previously did everything by hand
+- Simplified PCB design made **faster production** possible
+- System runs reliably on solar — no electricity grid needed
 
 ---
 
@@ -41,13 +57,9 @@ The system was built to operate in remote or off-grid areas using renewable sola
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/venambak_feeederve/feederve-3.jpg" title="Production Units" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/venambak_feeederve/feederve-3.jpg" title="Production Line" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/work/venambak_feeederve/feederve-4.jpg" title="Field Deployment" class="img-fluid rounded z-depth-1" %}
   </div>
-</div>
-
-<div class="caption">
-  Documentation photos: (Top row) prototype and solar-powered feeder, (Bottom row) production units and field deployment.
 </div>

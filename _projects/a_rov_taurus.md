@@ -8,61 +8,65 @@ category: work
 related_publications: false
 ---
 
-## Remotely Operated Underwater Vehicle (ROV) for RIG Taurus Survey  
-**Collaboration with Pertamina Hulu Energi West Madura Offshore (PHE WMO)**  
+## ROV Survey for RIG Taurus
+
+> 7-day underwater inspection mission at an offshore oil rig using Remotely Operated Vehicle, in collaboration with Pertamina Hulu Energi West Madura Offshore.
 
 <div class="text-center my-3">
   <img src="/assets/img/projects/work/rov_taurus/fotobersama.jpg"
        class="img-fluid rounded z-depth-1"
        width="100%"
        height="auto"
-       title="Team Photo"
-       loading="eager"
-       onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+       title="Team Photo at RIG Taurus"
+       loading="eager">
 </div>
 
-### Overview  
-An underwater survey was conducted over **7 days (August 1–7, 2024)** using a Remotely Operated Vehicle (ROV) around the **RIG Taurus site** following a structural collapse incident.  
-This project was a collaboration between **Politeknik Elektronika Negeri Surabaya (PENS)** and **Pertamina Hulu Energi**, aiming to assess **operational safety** and the **hull condition** of the rig.  
+### The Challenge
 
-### Contribution  
-- Served as the **ROV pilot** and **underwater visual data analyst**.  
-- Operated the ROV to a depth of **20 meters** for underwater documentation.  
-- Analyzed recorded video footage to assess **structural integrity** and potential risks.  
-- Led the team and trained members in **ROV operation**.  
+Following a structural collapse incident at **RIG Taurus**, Pertamina Hulu Energi needed an underwater assessment of hull conditions and seabed integrity. Manual diver inspection was limited by depth and safety constraints — an **8-thruster ROV** was deployed for thorough documentation at **20 meters depth**.
 
-### Result  
-- Produced **visual reports** and **technical analysis** used by PHE WMO in operational safety evaluation.  
-- Identified **three critical areas** around the hull and seabed requiring further attention.  
+### What I Did
+
+Served as **ROV Pilot and Engineer** for the full 7-day survey (August 1–7, 2024), operating the vehicle in real offshore conditions at Madura Strait.
+
+- Piloted ROV across **3 critical inspection points** around the rig structure
+- Performed pre-dive **system checks, calibration, and troubleshooting** on control systems, cameras, and sensors
+- Captured and analyzed **underwater visual data** for hull condition assessment
+- Trained team members in ROV operation and safety procedures
+- Compiled **technical reports** with findings for Pertamina's maintenance decision team
+
+`ROV` `Underwater Inspection` `Offshore Operations` `Visual Data Analysis` `Technical Reporting`
+
+### Impact
+
+- Identified **3 critical areas** around hull and seabed requiring further maintenance attention
+- Delivered visual reports used directly by PHE WMO for **operational safety evaluation**
+- Completed all inspection targets within the 7-day timeline with zero incidents
 
 ---
 
-## Documentation  
+## Documentation
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/rov_taurus/debug.jpg" title="ROV Deployment" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/rov_taurus/debug.jpg" title="ROV System Check" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/rov_taurus/persiapan-1.jpg" title="ROV Operation" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/rov_taurus/persiapan-1.jpg" title="Pre-dive Preparation" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/rov_taurus/persiapan-2.jpg" title="Underwater Survey" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/rov_taurus/persiapan-2.jpg" title="ROV Deployment" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/rov_taurus/persiapan-3.jpg" title="Hull Inspection" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/rov_taurus/persiapan-3.jpg" title="Offshore Setup" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/rov_taurus/hasil-1.jpg" title="Team Operation" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/rov_taurus/hasil-1.jpg" title="Underwater Footage" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/work/rov_taurus/hasil-2.jpg" title="ROV Capture" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/work/rov_taurus/hasil-2.jpg" title="Hull Inspection Result" class="img-fluid rounded z-depth-1" %}
   </div>
-</div>
-
-<div class="caption">
-  Selected documentation from the 7-day underwater ROV survey around RIG Taurus.
 </div>

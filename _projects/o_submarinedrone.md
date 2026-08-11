@@ -3,7 +3,7 @@ layout: page
 title: Balancing Submarine Drone with MultiWii
 description: A personal project repurposing the MultiWii flight controller for underwater balancing, simulating AUV dynamics with low-cost open-source hardware.
 img: assets/img/projects/fun/submarinedrone/submarnedrone.png
-importance: 1
+importance: 3
 category: fun
 ---
 
