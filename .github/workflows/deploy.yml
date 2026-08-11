@@ -98,6 +98,8 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Stamp build id 🏷️
+        run: echo "${{ github.sha }}" > _site/build-id.txt
       - name: Deploy to cPanel (Rumah Web) 📦
         if: github.event_name != 'pull_request'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -107,5 +109,25 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           local-dir: _site/
-          server-dir: public_html/achadansori.com/achadansori/
+          # Relative to the FTP user's login directory, which must be the document
+          # root. A path here is almost never right: if the FTP account is already
+          # rooted at the docroot, it just nests a copy the web server never serves.
+          server-dir: ./
           log-level: standard
+      # The upload succeeding says nothing about it landing where the site is served
+      # from: a wrong server-dir uploads happily into a directory nobody reads, which
+      # is how this deploy silently changed nothing between July and August 2026.
+      - name: Verify the live site actually updated ✅
+        if: github.event_name != 'pull_request'
+        run: |
+          for i in $(seq 1 10); do
+            live=$(curl -sS --max-time 20 https://achadansori.com/build-id.txt 2>/dev/null | tr -d '[:space:]' || true)
+            if [ "$live" = "${{ github.sha }}" ]; then
+              echo "Live site is serving this build (${{ github.sha }})."
+              exit 0
+            fi
+            echo "attempt $i: live build-id is '${live:-<none>}', waiting..."
+            sleep 15
+          done
+          echo "::error::Upload reported success, but https://achadansori.com/ is not serving this build. server-dir does not point at the document root."
+          exit 1
