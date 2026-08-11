@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: about # also used as the navbar label for this page (see _includes/header.liquid)
 permalink: /
 subtitle: Hi, I'm Ansori
 
@@ -19,7 +19,7 @@ announcements:
   limit: 5
 
 latest_posts:
-  enabled: false
+  enabled: true
   scrollable: true
   limit: 3
 ---
