@@ -15,9 +15,16 @@ const skills=[{icon:ScanLine,name:'Perception',desc:'Image processing and object
 const posts=[['01','ROBOTICS & PURPOSE','Finding Your Ikigai','Jan 08, 2026','2026/finding-your-ikigai-in-robotics/'],['02','ENERGY & EXPLORATION',"Indonesia’s Offshore Renewable Energy Potential",'Dec 28, 2025','2025/energi-terbarukan-lepas-pantai-indonesia/'],['03','COMPUTER VISION','A Complete Guide to YOLOv11 Object Detection','Nov 20, 2025','2025/complete-guide-yolov11-object-detection/']];
 function App(){const [path,setPath]=useState(window.location.pathname);
 useEffect(()=>{
+ const jump=(hash,delay=20,behavior='smooth')=>{if(hash)setTimeout(()=>document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({behavior}),delay)};
  const update=()=>{setPath(window.location.pathname);setMenu(false);if(!window.location.hash)window.scrollTo(0,0)};
- const click=e=>{const a=e.target.closest('a');if(!a||a.target==='_blank'||a.hasAttribute('download')||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;const u=new URL(a.href,location.href);if(u.origin!==location.origin||u.pathname.startsWith('/assets/'))return;e.preventDefault();history.pushState({},'',u.pathname+u.search+u.hash);update();if(u.hash)setTimeout(()=>document.getElementById(decodeURIComponent(u.hash.slice(1)))?.scrollIntoView({behavior:'smooth'}),20)};
- document.addEventListener('click',click);window.addEventListener('popstate',update);return()=>{document.removeEventListener('click',click);window.removeEventListener('popstate',update)};
+ const click=e=>{const a=e.target.closest('a');if(!a||a.target==='_blank'||a.hasAttribute('download')||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;const u=new URL(a.href,location.href);if(u.origin!==location.origin||u.pathname.startsWith('/assets/'))return;e.preventDefault();history.pushState({},'',u.pathname+u.search+u.hash);update();jump(u.hash)};
+ // A deep link lands before the images have height, so the first jump undershoots.
+ // ponytail: re-jump once on load; lazy images further down can still shift layout,
+ // give the images intrinsic width/height if that ever shows.
+ jump(window.location.hash,60,'instant');
+ const settle=()=>jump(window.location.hash,0,'instant');
+ if(document.readyState==='complete')setTimeout(settle,300);else window.addEventListener('load',()=>setTimeout(settle,300),{once:true});
+ document.addEventListener('click',click);const pop=()=>{update();jump(window.location.hash)};window.addEventListener('popstate',pop);return()=>{document.removeEventListener('click',click);window.removeEventListener('popstate',pop)};
 },[]);
 useEffect(()=>{const p=content.pages.find(p=>p.path===path);document.title=p?p.title+' | Ansori':path.startsWith('/projects')?'Projects | Ansori':path.startsWith('/blog')?'Journal | Ansori':'Ansori | Robotics & R&D Engineer'},[path]);
 const [menu,setMenu]=useState(false);
