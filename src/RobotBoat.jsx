@@ -38,9 +38,8 @@ export default function RobotBoat() {
   };
  }, []);
 
- return <section className="robot-voyage" ref={sectionRef} aria-labelledby="voyage-title">
+ return <section className="robot-voyage" ref={sectionRef} aria-label="Autonomous surface vehicle">
   <div className="voyage-scene" ref={sceneRef}>
-   <div className="voyage-heading wrap"><div className="eyebrow">AUTONOMOUS SURFACE VEHICLE</div><h2 id="voyage-title">Moving forward<span>.</span></h2><p>From perception to motion.</p></div>
    <div className="voyage-water" aria-hidden="true"><span/><span/><span/></div>
    <div className="voyage-boat" ref={boatRef}>
     <svg viewBox="0 0 440 200" role="img" aria-label="Side-view illustration inspired by Jalavahana ASV, with an electronics enclosure, a frame-mounted Intel RealSense-style camera in side profile, a lower frame-mounted LiDAR ahead of the mast, wind sensor and underwater thrusters">
@@ -106,7 +105,6 @@ export default function RobotBoat() {
      </g>
     </svg>
    </div>
-   <div className="voyage-caption wrap"><span>ASV / ROBOTICS IN MOTION</span><span className="voyage-scroll">SCROLL TO NAVIGATE ↓</span></div>
    <div className="voyage-progress" aria-hidden="true"/>
   </div>
  </section>;
