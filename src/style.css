@@ -30,3 +30,21 @@ header{position:sticky;top:0;z-index:20;background:rgba(20,20,20,.96);backdrop-f
 .section{padding-top:60px;padding-bottom:60px}.about.section{padding-top:35px;padding-bottom:40px}.section-heading{margin-bottom:28px}.journal{padding-top:15px}.contact{padding-top:20px;padding-bottom:45px}.contact h2{font-size:64px}.skills article{padding:23px 20px}.skill-top{margin-bottom:24px}
 @media(max-width:1050px){.hero{gap:28px}.hero>.portrait img{height:330px}.hero h1{font-size:48px}.about-copy{gap:0 25px}}
 @media(max-width:740px){.hero{grid-template-columns:1fr;padding-top:22px;padding-bottom:28px;gap:22px}.hero>.portrait{max-width:none}.hero>.portrait img{height:280px}.hero h1{font-size:43px}.hero .portrait-label{padding-top:9px}.about-heading{display:block;margin-bottom:22px}.about-heading .eyebrow{margin-bottom:12px}.about-heading h2{margin-top:12px;font-size:32px}.about-copy{display:block}.about-copy .ikigai{margin-bottom:20px}.section{padding-top:40px;padding-bottom:40px}.about.section{padding-top:28px;padding-bottom:30px}.contact h2{font-size:46px}.journal{padding-top:10px}.contact{padding-top:10px}.hero-foot{padding-top:12px}}
+
+@media(max-width:740px){footer>div{flex-wrap:wrap;row-gap:16px}}
+
+/* Scroll-driven autonomous boat, drawn as a lightweight 2D SVG. */
+.robot-voyage{background:#050505;border-top:1px solid var(--line)}
+.voyage-scene{position:relative;height:560px;overflow:hidden;--voyage:0%}
+.voyage-heading{padding-top:42px;position:relative;z-index:1;pointer-events:none}
+.voyage-heading h2{font-size:clamp(30px,4vw,48px)}
+.voyage-heading p{color:var(--muted);font-size:15px;margin-top:14px}
+.voyage-water{position:absolute;inset:65% 0 0;border-top:1px solid #ffffff60;background:linear-gradient(180deg,#ffffff08,transparent 85%);pointer-events:none}
+.voyage-water span{position:absolute;height:1px;background:linear-gradient(90deg,transparent,#ffffff20,transparent)}
+.voyage-water span:nth-child(1){top:22%;left:5%;width:35%}.voyage-water span:nth-child(2){top:43%;right:8%;width:42%}.voyage-water span:nth-child(3){top:62%;left:19%;width:25%}
+.voyage-boat{position:absolute;top:65%;left:0;width:clamp(230px,36vw,480px);transform:translate3d(24px,-80%,0);will-change:transform}
+.voyage-boat svg{display:block;width:100%;height:auto}
+.voyage-caption{position:absolute;bottom:34px;left:0;right:0;display:flex;justify-content:space-between;gap:20px;font:11px var(--mono);letter-spacing:1px;color:#919191}
+.voyage-progress{position:absolute;left:0;bottom:0;width:var(--voyage);height:2px;background:#eee}
+@media(max-width:740px){.voyage-scene{height:420px}.voyage-heading{padding-top:30px}.voyage-heading .eyebrow{font-size:10px;letter-spacing:1px}.voyage-caption{font-size:9px;letter-spacing:.4px;bottom:24px;flex-wrap:wrap}.voyage-boat{width:clamp(210px,62vw,360px)}}
+@media(prefers-reduced-motion:reduce){.voyage-boat{will-change:auto}.voyage-scroll{display:none}}
