@@ -39,8 +39,8 @@ header{position:sticky;top:0;z-index:20;background:rgba(20,20,20,.96);backdrop-f
 .voyage-water{position:absolute;inset:65% 0 0;border-top:1px solid #ffffff60;background:linear-gradient(180deg,#ffffff08,transparent 85%);pointer-events:none}
 .voyage-water span{position:absolute;height:1px;background:linear-gradient(90deg,transparent,#ffffff20,transparent)}
 .voyage-water span:nth-child(1){top:22%;left:5%;width:35%}.voyage-water span:nth-child(2){top:43%;right:8%;width:42%}.voyage-water span:nth-child(3){top:62%;left:19%;width:25%}
-.voyage-boat{position:absolute;top:65%;left:0;width:clamp(184px,28.8vw,384px);transform:translate3d(24px,-80%,0);will-change:transform}
+.voyage-boat{position:absolute;top:65%;left:0;width:clamp(156px,23vw,306px);transform:translate3d(24px,-80%,0);will-change:transform}
 .voyage-boat svg{display:block;width:100%;height:auto}
 .voyage-progress{position:absolute;left:0;bottom:0;width:var(--voyage);height:2px;background:#eee}
-@media(max-width:740px){.voyage-scene{height:420px}.voyage-boat{width:clamp(168px,49.6vw,288px)}}
+@media(max-width:740px){.voyage-scene{height:420px}.voyage-boat{width:clamp(140px,40vw,230px)}}
 @media(prefers-reduced-motion:reduce){.voyage-boat{will-change:auto}}
