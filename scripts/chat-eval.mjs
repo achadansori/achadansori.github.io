@@ -5,7 +5,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pipeline, env } from '@huggingface/transformers';
-import { loadIndex, semanticRank, lexicalRank, choose } from '../src/chat/search.js';
+import { loadIndex, semanticRank, lexicalRank, choose, detectLang, forEmbedding } from '../src/chat/search.js';
 
 const cases = [
   ['What does Ansori do?', ['intro', 'current-role']],
@@ -39,6 +39,14 @@ const cases = [
   ['Has he used LiDAR?', ['/projects/q_jaladhi/', '/projects/j_asv_2024/', '/projects/k_jalavahana/', 'ros', 'computer-vision']],
   ['Apakah dia pernah memimpin tim?', ['leadership']],
   ['Bahasa pemrograman yang dikuasai?', ['skills-programming']],
+  // Casual Indonesian, typed the way visitors actually type on a phone.
+  ['ansori sedang kerja dimana', ['current-role']],
+  ['lagi kerja apa sekarang', ['current-role']],
+  ['dia lulusan mana', ['education']],
+  ['kontaknya apa', ['contact']],
+  ['sertifikatnya apa aja', ['certifications']],
+  ['punya pengalaman robot bawah air?', ['e-auv', 'marine-robotics', '/projects/f_emosver/']],
+  ['keahliannya di bidang apa', ['intro', 'skills-embedded', 'skills-hardware', 'skills-programming']],
   ['Tell me a joke', [null]],
   ['What is 2 + 2?', [null]],
   ["What's the weather today?", [null]],
@@ -59,7 +67,7 @@ const label = r => (r ? (r.item.k === 'faq' ? r.item.id : r.item.href) : null);
 const quiet = process.argv.includes('--quiet');
 let pass = 0, keywordPass = 0;
 for (const [question, expected] of cases) {
-  const q = (await extract('query: ' + question, { pooling: 'mean', normalize: true })).data;
+  const q = (await extract('query: ' + forEmbedding(question, detectLang(question)), { pooling: 'mean', normalize: true })).data;
   const ranked = semanticRank(index, q);
   const lexical = lexicalRank(index, question);
   const got = choose(index, ranked, lexical);
@@ -70,6 +78,7 @@ for (const [question, expected] of cases) {
   const top = r => `${label({ item: index.items[r.item] })} ${r.score.toFixed(3)}`;
   const topFaq = ranked.find(r => index.items[r.item].k === 'faq');
   const topPage = ranked.find(r => index.items[r.item].k === 'page');
+  if (quiet && ok && !expected.includes(label(keyword))) console.log(`kw    ${question}\n      keyword-only → ${label(keyword)}`);
   if (!quiet || !ok) console.log(`${ok ? 'PASS' : 'FAIL'}  ${question}\n      → ${label(got)}${got ? ' ' + got.score.toFixed(3) : ''}   [faq ${top(topFaq)} | page ${top(topPage)}]   keyword-only: ${label(keyword)}${got?.related.length ? '\n      related: ' + got.related.map(r => r.label).join(', ') : ''}`);
 }
 console.log(`\n${pass}/${cases.length} passed (keyword-only fallback: ${keywordPass}/${cases.length})`);

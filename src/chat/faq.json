@@ -2,8 +2,8 @@
   {
     "id": "intro",
     "q": {
-      "en": ["Who is Ansori?", "Who are you?", "Give me a quick introduction to Ansori", "What kind of engineer is he?"],
-      "id": ["Siapa Ansori?", "Siapa kamu?", "Perkenalkan Ansori secara singkat", "Dia engineer apa?"]
+      "en": ["Who is Ansori?", "Who are you?", "Give me a quick introduction to Ansori", "What kind of engineer is he?", "What are his areas of expertise?"],
+      "id": ["Siapa Ansori?", "Siapa kamu?", "Perkenalkan Ansori secara singkat", "Dia engineer apa?", "Bidang keahliannya apa?"]
     },
     "a": {
       "en": "Muhammad Achad Ansori is an R&D Robotics Engineer at PT Aldzama. He works on embedded systems, PCB design, control systems, computer vision, and autonomous navigation, and has worked across marine robotics, offshore operations, smart manufacturing, aquaculture technology, and demolition robotics. He graduated in Electronics Engineering from PENS.",
@@ -14,8 +14,8 @@
   {
     "id": "current-role",
     "q": {
-      "en": ["What does he do now?", "Where does he work?", "What is his current job?", "What does he do at PT Aldzama?"],
-      "id": ["Sekarang kerja di mana?", "Apa pekerjaannya sekarang?", "Kerja apa di PT Aldzama?", "Posisinya sekarang apa?"]
+      "en": ["What does he do now?", "Where does he work?", "What is his current job?", "Who is his current employer?", "What does he do at PT Aldzama?"],
+      "id": ["Sekarang kerja di mana?", "Dia sedang bekerja di mana?", "Apa pekerjaannya sekarang?", "Bekerja di perusahaan apa?", "Kerja apa di PT Aldzama?", "Posisinya sekarang apa?"]
     },
     "a": {
       "en": "Since February 2026 he has been a Research and Development Engineer (contract) at PT Aldzama, developing embedded control systems for industrial demolition robots, from schematic and PCB design through C/C++ firmware (UART, CAN bus, PWM, digital I/O), plus electro-hydraulic control modules and field troubleshooting at client sites. He was promoted to this role from Demolition Robot Technician after 3 months. Project specifics are confidential.",
@@ -327,7 +327,7 @@
     "id": "contact",
     "q": {
       "en": ["How can I contact him?", "What is his email?", "Is he on LinkedIn?", "I want to reach out"],
-      "id": ["Bagaimana cara menghubunginya?", "Emailnya apa?", "Ada LinkedIn?", "Saya mau menghubungi"]
+      "id": ["Bagaimana cara menghubunginya?", "Emailnya apa?", "Ada kontak yang bisa dihubungi?", "Ada LinkedIn?", "Saya mau menghubungi"]
     },
     "a": {
       "en": "Email achad@achadansori.com or connect on LinkedIn at linkedin.com/in/achadansori.",
