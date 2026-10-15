@@ -25,7 +25,17 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
+      # The build embeds the chat assistant's index with the same model the browser
+      # loads; caching it saves a 135 MB download from Hugging Face on every run.
+      - name: Cache chat model 🧠
+        uses: actions/cache@v4
+        with:
+          path: .cache/transformers
+          key: chat-model-multilingual-e5-small-q8
       - name: Install and build 🔧
+        env:
+          # onnxruntime-node ships its CPU binary; skip the optional CUDA download.
+          ONNXRUNTIME_NODE_INSTALL: skip
         run: |
           npm ci
           npm run build

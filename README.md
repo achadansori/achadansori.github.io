@@ -19,6 +19,17 @@ Buka alamat yang ditampilkan Vite. Semua halaman dapat dibuka dari preview yang 
 - `src/style.css`: tema dan layout.
 - `public/images/`: foto beranda.
 - `public/assets/`: gambar dan dokumen konten.
+- `src/chat/faq.json`: tanya-jawab asisten portofolio (lihat di bawah).
+
+## Asisten portofolio
+
+Tombol "Ask about my work" membuka asisten yang menjawab pertanyaan tentang portofolio dalam bahasa Inggris atau Indonesia. Asisten ini tidak menyusun kalimat sendiri: model embedding `multilingual-e5-small` berjalan di browser pengunjung dan mencocokkan pertanyaan dengan jawaban di `src/chat/faq.json` atau bagian halaman proyek, CV, dan artikel. Pertanyaan di luar portofolio dijawab "tidak tahu". Tidak ada server atau API key.
+
+- Desktop memuat model (sekitar 150 MB sekali, lalu tersimpan di cache browser) saat panel dibuka. Di HP atau mode hemat data, pengunjung memakai pencarian kata kunci sampai menekan "Turn on smart search".
+- Mengubah jawaban: edit `src/chat/faq.json` (setiap entri berisi variasi pertanyaan `q` dan jawaban `a` dalam `en`/`id`). Tulis hanya fakta yang ada di portofolio.
+- Memeriksa jawaban: `npm run chat:index && npm run chat:eval`. Skrip evaluasi menguji sekitar 40 pertanyaan, termasuk pertanyaan di luar topik yang harus ditolak. Tambahkan kasus di `scripts/chat-eval.mjs` bila menambah topik.
+- `npm run build` membuat `public/chat-index.json` dan membutuhkan akses ke Hugging Face untuk mengunduh model. Tanpa akses, build tetap selesai dan asisten hanya memakai pencarian kata kunci.
+- Di Linux x64, `npm ci` mencoba mengunduh binary CUDA yang tidak diperlukan. Jika gagal, jalankan `ONNXRUNTIME_NODE_INSTALL=skip npm ci`.
 
 ## Build
 

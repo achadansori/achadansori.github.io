@@ -4,6 +4,7 @@ import {ArrowUpRight, Download, Github, Linkedin, Mail, Menu, X, Cpu, ScanLine, 
 import './style.css';
 import {Page} from './Pages';
 import RobotBoat from './RobotBoat';
+import ChatWidget from './chat/ChatWidget';
 import content from './content.json';
 
 const projects = [
@@ -39,6 +40,7 @@ return <><header><a className="brand" href="/#home" aria-label="Ansori home"><sp
 
 <section className="wrap section journal" id="journal"><div className="section-heading"><div><div className="eyebrow">04 / ARTICLES</div><h2>Recent articles<span>.</span></h2></div><a className="text-link" href="/blog/">All articles <ArrowUpRight size={18}/></a></div><div>{posts.map(([n,cat,title,date,path])=><a className="post" key={n} href={'/blog/'+path}><span className="post-number">{n}</span><div><span className="post-category">{cat}</span><h3>{title}</h3></div><time>{date}</time><ArrowUpRight size={24}/></a>)}</div></section>
 <section className="contact wrap" id="contact"><div className="eyebrow">CONTACT</div><div className="contact-main"><h2>Get in touch<span>.</span></h2><a className="contact-arrow" href="mailto:achad@achadansori.com" aria-label="Email Ansori"><MoveUpRight size={58} strokeWidth={1}/></a></div><a className="email" href="mailto:achad@achadansori.com">achad@achadansori.com <ArrowUpRight size={22}/></a></section></>}</main><footer className="wrap"><a className="brand" href="/#home">ansori.</a><span>© {new Date().getFullYear()} Muhammad Achad Ansori</span><div><a href="https://github.com/achadansori" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14}/></a><a href="https://linkedin.com/in/achadansori" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14}/></a><a href="https://www.instagram.com/achadansori/" target="_blank" rel="noreferrer">Instagram <ArrowUpRight size={14}/></a><a href="/#home" aria-label="Back to top">Back to top ↑</a></div></footer>
+<ChatWidget/>
 </>}
 
 createRoot(document.getElementById('root')).render(<App/>);

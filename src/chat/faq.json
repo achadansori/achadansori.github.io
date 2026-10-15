@@ -1,0 +1,374 @@
+[
+  {
+    "id": "intro",
+    "q": {
+      "en": ["Who is Ansori?", "Who are you?", "Give me a quick introduction to Ansori", "What kind of engineer is he?"],
+      "id": ["Siapa Ansori?", "Siapa kamu?", "Perkenalkan Ansori secara singkat", "Dia engineer apa?"]
+    },
+    "a": {
+      "en": "Muhammad Achad Ansori is an R&D Robotics Engineer at PT Aldzama. He works on embedded systems, PCB design, control systems, computer vision, and autonomous navigation, and has worked across marine robotics, offshore operations, smart manufacturing, aquaculture technology, and demolition robotics. He graduated in Electronics Engineering from PENS.",
+      "id": "Muhammad Achad Ansori adalah R&D Robotics Engineer di PT Aldzama. Ia mengerjakan embedded system, desain PCB, sistem kontrol, computer vision, dan navigasi otonom, dengan pengalaman di robotika kelautan, operasi offshore, smart manufacturing, teknologi budidaya ikan, dan robot demolisi. Ia lulusan Teknik Elektronika PENS."
+    },
+    "links": [["About", "/#about"], ["Experience & CV", "/cv/"]]
+  },
+  {
+    "id": "current-role",
+    "q": {
+      "en": ["What does he do now?", "Where does he work?", "What is his current job?", "What does he do at PT Aldzama?"],
+      "id": ["Sekarang kerja di mana?", "Apa pekerjaannya sekarang?", "Kerja apa di PT Aldzama?", "Posisinya sekarang apa?"]
+    },
+    "a": {
+      "en": "Since February 2026 he has been a Research and Development Engineer (contract) at PT Aldzama, developing embedded control systems for industrial demolition robots, from schematic and PCB design through C/C++ firmware (UART, CAN bus, PWM, digital I/O), plus electro-hydraulic control modules and field troubleshooting at client sites. He was promoted to this role from Demolition Robot Technician after 3 months. Project specifics are confidential.",
+      "id": "Sejak Februari 2026 ia menjadi Research and Development Engineer (kontrak) di PT Aldzama, mengembangkan sistem kontrol embedded untuk robot demolisi industri, mulai dari skematik dan desain PCB sampai firmware C/C++ (UART, CAN bus, PWM, digital I/O), modul kontrol elektro-hidraulik, dan troubleshooting di lokasi klien. Ia dipromosikan dari Demolition Robot Technician setelah 3 bulan. Detail project-nya bersifat rahasia."
+    },
+    "links": [["Experience & CV", "/cv/"]]
+  },
+  {
+    "id": "education",
+    "q": {
+      "en": ["Where did he study?", "What is his education?", "Which university did he graduate from?", "What degree does he have?"],
+      "id": ["Kuliah di mana?", "Pendidikannya apa?", "Lulusan kampus mana?", "Gelarnya apa?"]
+    },
+    "a": {
+      "en": "He holds a Bachelor of Applied Science in Electronics Engineering from Politeknik Elektronika Negeri Surabaya (PENS), Aug 2021 to Aug 2025, advised by Arif Irwansyah. His final project, Jaladhi, an autonomous surface vehicle with collision avoidance, won 2nd place in the PENS Final Project Competition.",
+      "id": "Ia lulusan Sarjana Terapan (D4) Teknik Elektronika di Politeknik Elektronika Negeri Surabaya (PENS), Agustus 2021 sampai Agustus 2025, dengan pembimbing Arif Irwansyah. Tugas akhirnya, Jaladhi, kapal permukaan otonom dengan penghindaran tabrakan, meraih juara 2 Lomba Tugas Akhir PENS."
+    },
+    "links": [["Jaladhi project", "/projects/q_jaladhi/"], ["Experience & CV", "/cv/"]]
+  },
+  {
+    "id": "bangkit",
+    "q": {
+      "en": ["Has he studied machine learning?", "What is Bangkit Academy?", "Does he have AI training?"],
+      "id": ["Pernah belajar machine learning?", "Ikut Bangkit Academy?", "Punya pelatihan AI?"]
+    },
+    "a": {
+      "en": "He completed the Machine Learning cohort of Bangkit Academy (led by Google, Tokopedia, Gojek, and Traveloka), a 5-month program from Aug to Dec 2024 covering machine learning, deep learning, TensorFlow, and computer vision. For the capstone, Eyesight, he was the machine learning lead.",
+      "id": "Ia menyelesaikan kelas Machine Learning di Bangkit Academy (dipimpin Google, Tokopedia, Gojek, dan Traveloka), program intensif 5 bulan dari Agustus sampai Desember 2024 yang mencakup machine learning, deep learning, TensorFlow, dan computer vision. Di capstone Eyesight ia menjadi machine learning lead."
+    },
+    "links": [["Eyesight project", "/projects/l_eyesight/"]]
+  },
+  {
+    "id": "skills-embedded",
+    "q": {
+      "en": ["What embedded skills does he have?", "Which microcontrollers has he used?", "Does he know STM32 or ESP32?", "Can he write firmware?"],
+      "id": ["Skill embedded apa saja?", "Pernah pakai mikrokontroler apa?", "Bisa STM32 atau ESP32?", "Bisa bikin firmware?"]
+    },
+    "a": {
+      "en": "Embedded: STM32, ESP32, Arduino, and AVR, with microcontroller peripherals (digital I/O, ADC, timers, counters, watchdog, UART, SPI, I2C, CAN) and real-time control firmware in C/C++. At PT Aldzama he writes firmware for real-time motor and actuator control.",
+      "id": "Embedded: STM32, ESP32, Arduino, dan AVR, termasuk peripheral mikrokontroler (digital I/O, ADC, timer, counter, watchdog, UART, SPI, I2C, CAN) dan firmware kontrol real-time dengan C/C++. Di PT Aldzama ia menulis firmware untuk kontrol motor dan aktuator secara real-time."
+    },
+    "links": [["Technical skills", "/#capabilities"], ["Experience & CV", "/cv/"]]
+  },
+  {
+    "id": "skills-hardware",
+    "q": {
+      "en": ["Can he design PCBs?", "What hardware skills does he have?", "Has he dealt with EMI problems?", "Which PCB tools does he use?"],
+      "id": ["Bisa desain PCB?", "Skill hardware apa saja?", "Pernah menangani masalah EMI?", "Pakai software PCB apa?"]
+    },
+    "a": {
+      "en": "Yes. He does schematic design and PCB layout in EasyEDA, Eagle, and KiCad, plus component selection, power electronics, motor drivers, soldering, and prototyping. At PT Venambak he redesigned the FeederVE board around an ESP32 (from double-layer to single-layer) for a 50+ unit production run, and fixed EMC/EMI interference on the BoxVE system through a PCB redesign.",
+      "id": "Bisa. Ia mengerjakan skematik dan layout PCB di EasyEDA, Eagle, dan KiCad, juga pemilihan komponen, elektronika daya, driver motor, solder, dan prototyping. Di PT Venambak ia mendesain ulang board FeederVE berbasis ESP32 (dari 2 layer menjadi 1 layer) untuk produksi 50+ unit, dan mengatasi interferensi EMC/EMI pada sistem BoxVE lewat desain ulang PCB."
+    },
+    "links": [["Smart feeder project", "/projects/d_venambak_feederve/"], ["Experience & CV", "/cv/"]]
+  },
+  {
+    "id": "skills-programming",
+    "q": {
+      "en": ["What programming languages does he know?", "Does he code in Python or C++?", "Which software tools does he use?"],
+      "id": ["Bisa bahasa pemrograman apa?", "Bisa Python atau C++?", "Pakai tools software apa?"]
+    },
+    "a": {
+      "en": "Programming languages: C/C++, Python, JavaScript, and Bash. Tools: Git, Linux, ROS, OpenCV, YOLO, TensorFlow, and MQTT.",
+      "id": "Bahasa pemrograman: C/C++, Python, JavaScript, dan Bash. Tools: Git, Linux, ROS, OpenCV, YOLO, TensorFlow, dan MQTT."
+    },
+    "links": [["Technical skills", "/#capabilities"]]
+  },
+  {
+    "id": "ros",
+    "q": {
+      "en": ["Does he have ROS experience?", "Which projects use ROS?", "Has he built an autonomy stack?"],
+      "id": ["Pernah pakai ROS?", "Project mana yang pakai ROS?", "Pernah bikin sistem otonom?"]
+    },
+    "a": {
+      "en": "Yes. In the PENSHIP marine robotics team he moved the autonomy software from Python + MAVLink to a ROS-based stack. Jaladhi and the KKI 2024 ASV run ROS Noetic on a Jetson Nano, and Jalavahana uses ROS-based navigation with Pixhawk and RTK GPS.",
+      "id": "Pernah. Di tim robotika kelautan PENSHIP ia memindahkan software otonom dari Python + MAVLink ke stack berbasis ROS. Jaladhi dan ASV KKI 2024 berjalan dengan ROS Noetic di Jetson Nano, dan Jalavahana memakai navigasi berbasis ROS dengan Pixhawk dan RTK GPS."
+    },
+    "links": [["Jaladhi", "/projects/q_jaladhi/"], ["ASV KKI 2024", "/projects/j_asv_2024/"], ["Jalavahana", "/projects/k_jalavahana/"]]
+  },
+  {
+    "id": "computer-vision",
+    "q": {
+      "en": ["Does he do computer vision?", "What AI or YOLO projects has he built?", "Has he deployed AI on edge devices?", "Experience with Jetson Nano?"],
+      "id": ["Bisa computer vision?", "Project AI atau YOLO apa saja?", "Pernah deploy AI di edge device?", "Pengalaman pakai Jetson Nano?"]
+    },
+    "a": {
+      "en": "Yes, mostly on edge hardware. At PT Toshin he deployed a YOLOv4 defect detector on a Jetson Nano with TensorRT (29.8 FPS, F1-score 0.9945 as a working prototype). He also trained YOLOv8 for Eyesight (Bangkit capstone), fused YOLOv8 with RPLIDAR on Jaladhi, and built a helmet detection system with YOLO and OpenCV at PT Aldzama.",
+      "id": "Bisa, terutama di perangkat edge. Di PT Toshin ia men-deploy pendeteksi cacat produk YOLOv4 di Jetson Nano dengan TensorRT (29,8 FPS, F1-score 0,9945, tahap prototipe yang berjalan). Ia juga melatih YOLOv8 untuk Eyesight (capstone Bangkit), menggabungkan YOLOv8 dengan RPLIDAR di Jaladhi, dan membuat sistem deteksi helm dengan YOLO dan OpenCV di PT Aldzama."
+    },
+    "links": [["Defect detection", "/projects/b_toshin_cv/"], ["Safety detection", "/projects/safety-detection/"], ["Eyesight", "/projects/l_eyesight/"]]
+  },
+  {
+    "id": "offshore-rov",
+    "q": {
+      "en": ["Does he have offshore experience?", "Has he worked on an oil rig?", "Has he piloted an ROV?", "What happened in the RIG Taurus survey?", "Has he worked with Pertamina?"],
+      "id": ["Pernah kerja di offshore?", "Pernah kerja di anjungan minyak lepas pantai?", "Pernah jadi pilot ROV?", "Apa yang dikerjakan di RIG Taurus?", "Pernah kerja sama dengan Pertamina?"]
+    },
+    "a": {
+      "en": "Yes. In Jul to Aug 2024 he worked with Pertamina Hulu Energi West Madura Offshore as ROV Pilot and Engineer. He led the technical recovery of a non-operational ROV, then flew it during a 7-day underwater inspection at RIG Taurus (1 to 7 August 2024) at 20 metres depth across 3 inspection points. The survey flagged 3 critical areas and finished with zero incidents. He also holds a Sea Survival and Offshore Emergency Procedure certificate.",
+      "id": "Pernah. Pada Juli sampai Agustus 2024 ia bekerja dengan Pertamina Hulu Energi West Madura Offshore sebagai ROV Pilot and Engineer. Ia memimpin pemulihan teknis ROV yang sebelumnya tidak berfungsi, lalu menerbangkannya selama inspeksi bawah air 7 hari di RIG Taurus (1 sampai 7 Agustus 2024) di kedalaman 20 meter pada 3 titik inspeksi. Survei menemukan 3 area kritis dan selesai tanpa insiden. Ia juga punya sertifikat Sea Survival and Offshore Emergency Procedure."
+    },
+    "links": [["ROV RIG Taurus project", "/projects/a_rov_taurus/"]]
+  },
+  {
+    "id": "marine-robotics",
+    "q": {
+      "en": ["What marine robots has he built?", "Has he built underwater or surface vehicles?", "Tell me about AUV and ASV experience", "Which robotics competitions has he joined?"],
+      "id": ["Pernah bikin robot laut apa saja?", "Pernah bikin kapal atau robot bawah air?", "Pengalaman AUV dan ASV?", "Ikut lomba robot apa saja?"]
+    },
+    "a": {
+      "en": "At PENS, mostly with the PENSHIP marine robotics team, he worked on an autonomous semi-submarine drone (KKCTBN 2022 finalist), the E-AUV underwater vehicle (KRBAI 2023: 2nd place regional, 3rd place national), an electric RC racing boat (COMET 2023 finalist), autonomous surface vehicles for KKCTBN 2023 and KKI 2024 (national finalist), and Jalavahana (PKM 2024 national finalist, funded). Jaladhi, his final project, continued that line.",
+      "id": "Di PENS, sebagian besar bersama tim robotika kelautan PENSHIP, ia mengerjakan drone semi-kapal selam otonom (finalis KKCTBN 2022), robot bawah air E-AUV (KRBAI 2023: juara 2 regional, juara 3 nasional), kapal balap RC listrik (finalis COMET 2023), kapal permukaan otonom untuk KKCTBN 2023 dan KKI 2024 (finalis nasional), dan Jalavahana (finalis nasional PKM 2024, didanai). Tugas akhirnya, Jaladhi, melanjutkan rangkaian itu."
+    },
+    "links": [["E-AUV", "/projects/f_emosver/"], ["All projects", "/projects/"]]
+  },
+  {
+    "id": "awards",
+    "q": {
+      "en": ["What awards has he won?", "Any achievements or competition wins?", "Has he won any national competitions?"],
+      "id": ["Pernah juara apa saja?", "Prestasinya apa?", "Pernah menang lomba nasional?"]
+    },
+    "a": {
+      "en": "Awards: Most Active and Best Idea at a Kaizen Event, PT Aldzama (2026); 2nd Place, PENS Final Project Competition (2025); National Finalist and Funded Proposal, PKM Research & Technology for Jalavahana (2024); 3rd Place National and 2nd Place Region 2, Underwater Robotics Competition KRBAI (2023).",
+      "id": "Penghargaan: Most Active and Best Idea di Kaizen Event PT Aldzama (2026); Juara 2 Lomba Tugas Akhir PENS (2025); Finalis Nasional dan proposal didanai, PKM Riset & Teknologi untuk Jalavahana (2024); Juara 3 Nasional dan Juara 2 Regional 2, Kontes Robot Bawah Air KRBAI (2023)."
+    },
+    "links": [["Experience & CV", "/cv/"]]
+  },
+  {
+    "id": "leadership",
+    "q": {
+      "en": ["Does he have leadership experience?", "Has he led a team?", "Can he manage projects?"],
+      "id": ["Punya pengalaman memimpin?", "Pernah jadi ketua tim?", "Bisa mengelola project?"]
+    },
+    "a": {
+      "en": "Yes. As General Manager of the PENSHIP marine robotics team (Mar to Dec 2023) he led 15 members across 4 robot platforms and set up a weekly meeting culture. He also led the E-AUV, COMET 2023, KKCTBN 2023, and Jalavahana teams, including PKM proposal writing, and trained team members on ROV operation during the RIG Taurus survey.",
+      "id": "Punya. Sebagai General Manager tim robotika kelautan PENSHIP (Maret sampai Desember 2023) ia memimpin 15 anggota di 4 platform robot dan membangun budaya rapat mingguan. Ia juga memimpin tim E-AUV, COMET 2023, KKCTBN 2023, dan Jalavahana, termasuk menulis proposal PKM, serta melatih anggota tim mengoperasikan ROV saat survei RIG Taurus."
+    },
+    "links": [["Experience & CV", "/cv/"]]
+  },
+  {
+    "id": "internships",
+    "q": {
+      "en": ["What internships has he done?", "Where did he intern?", "What did he do at PT Toshin?", "What did he do at PT Venambak?"],
+      "id": ["Pernah magang di mana?", "Pengalaman magangnya apa?", "Ngapain di PT Toshin?", "Ngapain di PT Venambak?"]
+    },
+    "a": {
+      "en": "Two internships. At PT Toshin Prima Fine Blanking (Indoprima Group), Feb to Jul 2024, he built a YOLOv4 visual inspection system on a Jetson Nano and an IoT monitoring system for 2 factory chillers, and maintained fine blanking machines. At PT Venambak Kail Dipantara, Dec 2024 to May 2025, he redesigned the FeederVE PCB for 50+ units, fixed EMI on BoxVE, and wrote software for the AutoVE mobile aerator.",
+      "id": "Dua kali magang. Di PT Toshin Prima Fine Blanking (Indoprima Group), Februari sampai Juli 2024, ia membuat sistem inspeksi visual YOLOv4 di Jetson Nano dan sistem monitoring IoT untuk 2 chiller pabrik, serta merawat mesin fine blanking. Di PT Venambak Kail Dipantara, Desember 2024 sampai Mei 2025, ia mendesain ulang PCB FeederVE untuk 50+ unit, mengatasi EMI di BoxVE, dan menulis software untuk aerator bergerak AutoVE."
+    },
+    "links": [["Defect detection", "/projects/b_toshin_cv/"], ["Chiller monitoring", "/projects/c_toshin_chiller/"], ["Smart feeder", "/projects/d_venambak_feederve/"]]
+  },
+  {
+    "id": "iot",
+    "q": {
+      "en": ["Does he have IoT experience?", "Has he built a monitoring dashboard?", "How does the chiller monitoring system work?"],
+      "id": ["Pernah bikin project IoT?", "Pernah bikin dashboard monitoring?", "Bagaimana sistem monitoring chiller bekerja?"]
+    },
+    "a": {
+      "en": "Yes. At PT Toshin he built an on-premise IoT system for 2 critical chiller units: ESP32 sensor nodes reading temperature, pressure, and current, a Raspberry Pi server with MySQL and PHP, and a live web dashboard on the plant network, giving 24/7 monitoring to reduce the risk of factory-wide downtime.",
+      "id": "Pernah. Di PT Toshin ia membuat sistem IoT on-premise untuk 2 unit chiller penting: node sensor ESP32 yang membaca suhu, tekanan, dan arus, server Raspberry Pi dengan MySQL dan PHP, serta dashboard web real-time di jaringan pabrik, sehingga chiller terpantau 24 jam untuk mengurangi risiko seluruh lini produksi berhenti."
+    },
+    "links": [["Chiller monitoring project", "/projects/c_toshin_chiller/"]]
+  },
+  {
+    "id": "production",
+    "q": {
+      "en": ["Has he taken a product to production?", "Does he have manufacturing experience?", "Has he built something used by real customers?"],
+      "id": ["Pernah membawa produk sampai produksi?", "Punya pengalaman produksi massal?", "Pernah bikin alat yang dipakai pengguna nyata?"]
+    },
+    "a": {
+      "en": "Yes. At PT Venambak he took the solar-powered FeederVE fish feeder from prototype to production: 50+ units over 5 months, with the PCB redesigned from double-layer to single-layer to cut cost, every unit field-tested, and units deployed to rural fish farms.",
+      "id": "Pernah. Di PT Venambak ia membawa pakan ikan otomatis tenaga surya FeederVE dari prototipe ke produksi: 50+ unit dalam 5 bulan, PCB didesain ulang dari 2 layer menjadi 1 layer untuk menekan biaya, setiap unit diuji di lapangan, dan dipasang di tambak-tambak pedesaan."
+    },
+    "links": [["Smart feeder project", "/projects/d_venambak_feederve/"]]
+  },
+  {
+    "id": "aquaculture",
+    "q": {
+      "en": ["Has he worked on aquaculture technology?", "Has he built anything for fish farmers?", "Does he have experience with fish farming devices?"],
+      "id": ["Pernah mengerjakan teknologi budidaya ikan?", "Ada project untuk petambak ikan?", "Punya pengalaman dengan alat tambak?"]
+    },
+    "a": {
+      "en": "Yes, at PT Venambak Kail Dipantara. FeederVE is a solar-powered automatic fish feeder; he redesigned its ESP32 board and took it to a production run of 50+ units deployed to rural fish farms. AutoVE is a mobile pond aerator; he moved it from an ESP32 to a Linux mini PC with Python, smartphone control over WiFi, and solar-compatible power.",
+      "id": "Pernah, di PT Venambak Kail Dipantara. FeederVE adalah pemberi pakan ikan otomatis tenaga surya; ia mendesain ulang board ESP32-nya dan membawanya ke produksi 50+ unit yang dipasang di tambak pedesaan. AutoVE adalah aerator kolam yang bisa bergerak; ia memindahkannya dari ESP32 ke mini PC Linux dengan Python, kontrol lewat smartphone via WiFi, dan daya yang kompatibel dengan panel surya."
+    },
+    "links": [["Smart feeder", "/projects/d_venambak_feederve/"], ["Automatic aerator", "/projects/e_venambak_autove/"]]
+  },
+  {
+    "id": "control",
+    "q": {
+      "en": ["Does he know control systems?", "Has he tuned PID controllers?", "Experience with Kalman filters or IMUs?"],
+      "id": ["Paham sistem kontrol?", "Pernah tuning PID?", "Pernah pakai Kalman filter atau IMU?"]
+    },
+    "a": {
+      "en": "Yes. His bicopter project uses PID on an Arduino Nano with a Kalman filter fusing MPU6050 data (rise time 0.56 s, overshoot 9.58%). He also tuned depth and heading control on the E-AUV, retuned MultiWii PID for an underwater balancing drone, and built IMU-based yaw stabilisation for an omni-wheel rover.",
+      "id": "Paham. Project bicopter-nya memakai PID di Arduino Nano dengan Kalman filter untuk data MPU6050 (rise time 0,56 detik, overshoot 9,58%). Ia juga menyetel kontrol kedalaman dan heading di E-AUV, menyetel ulang PID MultiWii untuk drone penyeimbang bawah air, dan membuat stabilisasi yaw berbasis IMU untuk rover omni-wheel."
+    },
+    "links": [["Bicopter PID", "/projects/n_bicopterpid/"], ["Submarine drone", "/projects/o_submarinedrone/"]]
+  },
+  {
+    "id": "best-projects",
+    "q": {
+      "en": ["What are his best projects?", "Which project should I look at first?", "Show me his main work"],
+      "id": ["Project terbaiknya apa?", "Project mana yang sebaiknya dilihat dulu?", "Tunjukkan karya utamanya"]
+    },
+    "a": {
+      "en": "Four selected projects: Jaladhi (autonomous surface vehicle with COLREGs collision avoidance, 2nd place final project), E-AUV (autonomous underwater vehicle, 3rd place national KRBAI 2023), ROV survey at RIG Taurus (7-day offshore inspection with Pertamina Hulu Energi), and Safety Detection (YOLO helmet detection tested at PT Aldzama).",
+      "id": "Empat project pilihan: Jaladhi (kapal permukaan otonom dengan penghindaran tabrakan sesuai COLREGs, juara 2 tugas akhir), E-AUV (robot bawah air otonom, juara 3 nasional KRBAI 2023), survei ROV di RIG Taurus (inspeksi offshore 7 hari bersama Pertamina Hulu Energi), dan Safety Detection (deteksi helm dengan YOLO yang diuji di PT Aldzama)."
+    },
+    "links": [["Jaladhi", "/projects/q_jaladhi/"], ["E-AUV", "/projects/f_emosver/"], ["ROV RIG Taurus", "/projects/a_rov_taurus/"], ["Safety Detection", "/projects/safety-detection/"]]
+  },
+  {
+    "id": "jaladhi",
+    "q": {
+      "en": ["What is Jaladhi?", "How does Jaladhi work?", "What was his final project?"],
+      "id": ["Apa itu Jaladhi?", "Bagaimana cara kerja Jaladhi?", "Tugas akhirnya tentang apa?"]
+    },
+    "a": {
+      "en": "Jaladhi is his final project at PENS: an autonomous surface vehicle for offshore energy exploration that avoids collisions following COLREGs, the rules other vessels expect at sea. It fuses YOLOv8 object classification (optimised with TensorRT) with RPLIDAR A2 ranging, runs on a Jetson Nano under ROS Noetic, and succeeds the PKM Jalavahana vessel. It won 2nd place in the PENS Final Project Competition, and the project page includes the full IEEE-format paper.",
+      "id": "Jaladhi adalah tugas akhirnya di PENS: kapal permukaan otonom untuk eksplorasi energi lepas pantai yang menghindari tabrakan sesuai COLREGs, aturan manuver yang diharapkan kapal lain di laut. Kapal ini menggabungkan klasifikasi objek YOLOv8 (dioptimalkan dengan TensorRT) dengan pengukuran jarak RPLIDAR A2, berjalan di Jetson Nano dengan ROS Noetic, dan merupakan penerus kapal PKM Jalavahana. Jaladhi meraih juara 2 Lomba Tugas Akhir PENS, dan halaman project-nya memuat paper lengkap berformat IEEE."
+    },
+    "links": [["Jaladhi project", "/projects/q_jaladhi/"], ["Jalavahana", "/projects/k_jalavahana/"]]
+  },
+  {
+    "id": "e-auv",
+    "q": {
+      "en": ["What is E-AUV?", "What is EMOSVER?", "What underwater robot did he build for KRBAI?"],
+      "id": ["Apa itu E-AUV?", "Apa itu EMOSVER?", "Robot bawah air untuk KRBAI seperti apa?"]
+    },
+    "a": {
+      "en": "E-AUV (EMOSVER) is a fully autonomous underwater vehicle that represented PENS at KRBAI 2023. It passes through gates while holding depth and heading from on-board sensors, and follows a submerged cable using HSV-based detection on a Jetson Nano, with an Arduino handling motor control. He led the team, designed the electrical system, and implemented the autonomous navigation. It took 2nd place regional and 3rd place national.",
+      "id": "E-AUV (EMOSVER) adalah robot bawah air otonom penuh yang mewakili PENS di KRBAI 2023. Robot ini melewati gate sambil menjaga kedalaman dan heading dari sensor internal, dan mengikuti kabel di dasar air dengan deteksi berbasis HSV di Jetson Nano, sementara Arduino mengatur motor. Ia memimpin tim, merancang sistem kelistrikan, dan mengimplementasikan navigasi otonomnya. Hasilnya juara 2 regional dan juara 3 nasional."
+    },
+    "links": [["E-AUV project", "/projects/f_emosver/"]]
+  },
+  {
+    "id": "safety-detection",
+    "q": {
+      "en": ["What is the safety detection project?", "Has he built a helmet detection system?", "Has he worked on workplace safety with AI?"],
+      "id": ["Apa itu project deteksi helm?", "Pernah bikin sistem deteksi helm?", "Pernah pakai AI untuk keselamatan kerja?"]
+    },
+    "a": {
+      "en": "At PT Aldzama he led and developed a YOLO and OpenCV system that detects people and helmets in camera video, matches each helmet to a person, and shows a warning when someone has no detected helmet. It was tested on a laptop in the demolition robot maintenance area and documented for Kaizen, with a permanent installation on an Orange Pi 5 proposed as the next step.",
+      "id": "Di PT Aldzama ia memimpin dan mengembangkan sistem berbasis YOLO dan OpenCV yang mendeteksi orang dan helm dari video kamera, mencocokkan setiap helm dengan orangnya, dan menampilkan peringatan jika ada orang tanpa helm terdeteksi. Sistem ini diuji dengan laptop di area perawatan robot demolisi dan didokumentasikan untuk Kaizen, dengan rencana pemasangan permanen di Orange Pi 5 sebagai langkah berikutnya."
+    },
+    "links": [["Safety Detection project", "/projects/safety-detection/"]]
+  },
+  {
+    "id": "papers",
+    "q": {
+      "en": ["Has he published any papers?", "Is there a technical paper?", "Any research publications?"],
+      "id": ["Pernah menulis paper?", "Ada paper teknisnya?", "Punya publikasi riset?"]
+    },
+    "a": {
+      "en": "The Jaladhi project page includes the full IEEE-format technical paper covering the vehicle design, sensor fusion, field trials, and collision-avoidance results. He also writes articles on robotics and computer vision in the journal section.",
+      "id": "Halaman project Jaladhi memuat paper teknis lengkap berformat IEEE yang membahas desain kapal, sensor fusion, uji lapangan, dan hasil penghindaran tabrakan. Ia juga menulis artikel tentang robotika dan computer vision di bagian journal."
+    },
+    "links": [["Jaladhi paper", "/projects/q_jaladhi/"], ["Articles", "/blog/"]]
+  },
+  {
+    "id": "articles",
+    "q": {
+      "en": ["Does he write articles?", "Does he have a blog?", "What has he written about?"],
+      "id": ["Pernah menulis artikel?", "Punya blog?", "Menulis tentang apa saja?"]
+    },
+    "a": {
+      "en": "Yes, three articles so far: a complete guide to YOLOv11 object detection from theory to deployment, Indonesia's offshore renewable energy potential, and Finding Your Ikigai in robotics.",
+      "id": "Ya, sejauh ini tiga artikel: panduan lengkap deteksi objek YOLOv11 dari teori sampai deployment, potensi energi terbarukan lepas pantai Indonesia, dan Finding Your Ikigai di bidang robotika."
+    },
+    "links": [["All articles", "/blog/"]]
+  },
+  {
+    "id": "code",
+    "q": {
+      "en": ["Where is his source code?", "Does he have a GitHub?", "Can I see his code?"],
+      "id": ["Source code-nya di mana?", "Punya GitHub?", "Bisa lihat kodenya?"]
+    },
+    "a": {
+      "en": "His GitHub is github.com/achadansori. The Smartdoorlock and Balancing Submarine Drone projects are published there openly.",
+      "id": "GitHub-nya github.com/achadansori. Project Smartdoorlock dan Balancing Submarine Drone dipublikasikan terbuka di sana."
+    },
+    "links": [["GitHub", "https://github.com/achadansori"]]
+  },
+  {
+    "id": "certifications",
+    "q": {
+      "en": ["Does he have certifications?", "Does he hold any safety certificates?", "Does he have sea survival training?"],
+      "id": ["Punya sertifikasi?", "Punya sertifikat keselamatan?", "Pernah ikut pelatihan sea survival?"]
+    },
+    "a": {
+      "en": "He holds the Sea Survival and Offshore Emergency Procedure certificate from PT Global Saftindo, valid Jul 2024 to Jul 2027 (credential GS-ADM-024-3594).",
+      "id": "Ia memiliki sertifikat Sea Survival and Offshore Emergency Procedure dari PT Global Saftindo, berlaku Juli 2024 sampai Juli 2027 (kredensial GS-ADM-024-3594)."
+    },
+    "links": [["Experience & CV", "/cv/"]]
+  },
+  {
+    "id": "languages",
+    "q": {
+      "en": ["What languages does he speak?", "Does he speak English?"],
+      "id": ["Bisa bahasa apa saja?", "Bisa bahasa Inggris?"]
+    },
+    "a": {
+      "en": "Bahasa Indonesia (native) and English (professional working proficiency).",
+      "id": "Bahasa Indonesia (bahasa ibu) dan bahasa Inggris (tingkat profesional untuk bekerja)."
+    },
+    "links": []
+  },
+  {
+    "id": "contact",
+    "q": {
+      "en": ["How can I contact him?", "What is his email?", "Is he on LinkedIn?", "I want to reach out"],
+      "id": ["Bagaimana cara menghubunginya?", "Emailnya apa?", "Ada LinkedIn?", "Saya mau menghubungi"]
+    },
+    "a": {
+      "en": "Email achad@achadansori.com or connect on LinkedIn at linkedin.com/in/achadansori.",
+      "id": "Kirim email ke achad@achadansori.com atau hubungi lewat LinkedIn di linkedin.com/in/achadansori."
+    },
+    "links": [["Email", "mailto:achad@achadansori.com"], ["LinkedIn", "https://linkedin.com/in/achadansori"]]
+  },
+  {
+    "id": "availability",
+    "q": {
+      "en": ["Is he open to work?", "Is he job hunting?", "Is he available for hire?", "What salary does he expect?", "Can he relocate or work remotely?"],
+      "id": ["Apakah sedang mencari kerja?", "Lagi cari lowongan?", "Bisa direkrut?", "Ekspektasi gajinya berapa?", "Bersedia pindah kota atau kerja remote?"]
+    },
+    "a": {
+      "en": "This portfolio doesn't say anything about availability, salary, or relocation, so I can't answer that. Please ask him directly at achad@achadansori.com.",
+      "id": "Portofolio ini tidak memuat informasi soal ketersediaan, gaji, atau relokasi, jadi saya tidak bisa menjawabnya. Silakan tanyakan langsung ke achad@achadansori.com."
+    },
+    "links": [["Email", "mailto:achad@achadansori.com"]]
+  },
+  {
+    "id": "cv",
+    "q": {
+      "en": ["Where can I download his CV?", "Can I get his resume?", "Is there a PDF CV?"],
+      "id": ["CV-nya bisa diunduh di mana?", "Minta resume-nya", "Ada CV dalam bentuk PDF?"]
+    },
+    "a": {
+      "en": "You can read the full CV on the Experience & CV page or download the PDF directly.",
+      "id": "CV lengkap bisa dibaca di halaman Experience & CV atau langsung diunduh dalam bentuk PDF."
+    },
+    "links": [["Experience & CV", "/cv/"], ["Download CV (PDF)", "/assets/pdf/cv_muhammad_achad_ansori.pdf"]]
+  },
+  {
+    "id": "about-bot",
+    "q": {
+      "en": ["How does this chatbot work?", "Are you ChatGPT?", "Is this AI?", "Who made you?"],
+      "id": ["Chatbot ini cara kerjanya bagaimana?", "Kamu ChatGPT?", "Ini AI?", "Siapa yang membuatmu?"]
+    },
+    "a": {
+      "en": "I'm a small search assistant that runs entirely in your browser. A multilingual embedding model (multilingual-e5-small) matches your question to answers written from this portfolio. I don't generate new text, so I can't make things up, but I also can't answer questions the portfolio doesn't cover.",
+      "id": "Saya asisten pencarian kecil yang berjalan sepenuhnya di browser Anda. Model embedding multibahasa (multilingual-e5-small) mencocokkan pertanyaan Anda dengan jawaban yang ditulis dari isi portofolio ini. Saya tidak menyusun kalimat baru, jadi tidak bisa mengarang, tapi juga tidak bisa menjawab hal yang tidak ada di portofolio."
+    },
+    "links": []
+  }
+]

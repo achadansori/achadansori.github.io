@@ -13,5 +13,8 @@ for(const route of new Set([...content.legacyPaths,'/projects/','/blog/','/cv/']
 fs.writeFileSync('dist/404.html',template);
 fs.writeFileSync('dist/robots.txt','User-agent: *\nAllow: /\nSitemap: https://achadansori.com/sitemap.xml\n');
 fs.writeFileSync('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+['/','/projects/','/blog/',...content.pages.map(p=>p.path)].map(p=>'<url><loc>https://achadansori.com'+p+'</loc></url>').join('')+'</urlset>');
-fs.writeFileSync('dist/.htaccess','RewriteEngine On\nRewriteCond %{HTTP_HOST} ^www\\.achadansori\\.com$ [NC]\nRewriteRule ^(.*)$ https://achadansori.com/$1 [R=301,L]\nErrorDocument 404 /404.html\n');
+// The chat assistant's ONNX runtime is a 27 MB .wasm that gzips to 7 MB. The module
+// guards keep the site up on a server without mod_deflate or mod_filter.
+const compression='AddType application/wasm .wasm\n<IfModule mod_deflate.c>\n<IfModule mod_filter.c>\nAddOutputFilterByType DEFLATE application/wasm application/json text/javascript application/javascript\n</IfModule>\n</IfModule>\n';
+fs.writeFileSync('dist/.htaccess','RewriteEngine On\nRewriteCond %{HTTP_HOST} ^www\\.achadansori\\.com$ [NC]\nRewriteRule ^(.*)$ https://achadansori.com/$1 [R=301,L]\nErrorDocument 404 /404.html\n'+compression);
 console.log('Static route entrypoints generated.');
