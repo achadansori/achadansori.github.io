@@ -121,7 +121,7 @@ export default function ChatWidget({T}) {
     try {
       const idx = await getIndex();
       const vector = model === 'ready' ? await embed(forEmbedding(text, lang)) : null;
-      const result = choose(idx, vector ? semanticRank(idx, vector) : null, lexicalRank(idx, text));
+      const result = choose(idx, vector ? semanticRank(idx, vector) : null, lexicalRank(idx, text), text);
       const t = copy[lang];
       if (!result) reply = {text: t.none, links: [['achad@achadansori.com', 'mailto:achad@achadansori.com']]};
       else if (result.item.k === 'faq') reply = {text: result.item.a[lang], links: result.item.links, related: result.related};

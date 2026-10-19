@@ -47,6 +47,14 @@ const cases = [
   ['sertifikatnya apa aja', ['certifications']],
   ['punya pengalaman robot bawah air?', ['e-auv', 'marine-robotics', '/projects/f_emosver/']],
   ['keahliannya di bidang apa', ['intro', 'skills-embedded', 'skills-hardware', 'skills-programming']],
+  ['dia bisa apa saja', ['intro']],
+  ['kemampuannya apa aja', ['intro']],
+  ['Bisa bahasa apa saja?', ['languages']],
+  ['Pakai software CAD apa?', ['cad']],
+  ['Hobinya apa aja?', ['hobbies']],
+  ['Does he like running?', ['hobbies']],
+  // The suggestion buttons as shown in the Indonesian interface (src/i18n.js).
+  ['Project mana yang pakai ROS?', ['ros']],
   ['Tell me a joke', [null]],
   ['What is 2 + 2?', [null]],
   ["What's the weather today?", [null]],
@@ -70,8 +78,8 @@ for (const [question, expected] of cases) {
   const q = (await extract('query: ' + forEmbedding(question, detectLang(question)), { pooling: 'mean', normalize: true })).data;
   const ranked = semanticRank(index, q);
   const lexical = lexicalRank(index, question);
-  const got = choose(index, ranked, lexical);
-  const keyword = choose(index, null, lexical); // what visitors get before the model loads
+  const got = choose(index, ranked, lexical, question);
+  const keyword = choose(index, null, lexical, question); // what visitors get before the model loads
   const ok = expected.includes(label(got));
   pass += ok;
   keywordPass += expected.includes(label(keyword));

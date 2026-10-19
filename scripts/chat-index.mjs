@@ -5,7 +5,7 @@
 // still written without vectors and the widget falls back to keyword search.
 import fs from 'node:fs';
 import path from 'node:path';
-import { forEmbedding } from '../src/chat/search.js';
+import { forEmbedding, normalizeQuestion } from '../src/chat/search.js';
 
 const MODEL = 'Xenova/multilingual-e5-small';
 const DTYPE = 'q8';
@@ -29,7 +29,8 @@ const items = [];
 const inputs = []; // [itemIndex, textToEmbed]
 
 for (const f of faq) {
-  const i = items.push({ k: 'faq', id: f.id, a: f.a, links: f.links, s: [...f.q.en, ...f.q.id, f.a.en, f.a.id].join(' ') }) - 1;
+  const q = [...f.q.en, ...f.q.id];
+  const i = items.push({ k: 'faq', id: f.id, a: f.a, links: f.links, q: q.map(normalizeQuestion), s: [...q, f.a.en, f.a.id].join(' ') }) - 1;
   for (const lang of ['en', 'id']) for (const q of f.q[lang]) inputs.push([i, 'query: ' + forEmbedding(q, lang)]);
 }
 

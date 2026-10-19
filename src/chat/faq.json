@@ -2,14 +2,14 @@
   {
     "id": "intro",
     "q": {
-      "en": ["Who is Ansori?", "Who are you?", "Give me a quick introduction to Ansori", "What kind of engineer is he?", "What are his areas of expertise?"],
-      "id": ["Siapa Ansori?", "Siapa kamu?", "Perkenalkan Ansori secara singkat", "Dia engineer apa?", "Bidang keahliannya apa?"]
+      "en": ["Who is Ansori?", "Who are you?", "Give me a quick introduction to Ansori", "What kind of engineer is he?", "What are his areas of expertise?", "What can he do?"],
+      "id": ["Siapa Ansori?", "Siapa kamu?", "Perkenalkan Ansori secara singkat", "Dia engineer apa?", "Bidang keahliannya apa?", "Dia bisa apa saja?", "Apa saja kemampuannya?"]
     },
     "a": {
       "en": "Muhammad Achad Ansori is an R&D Robotics Engineer at PT Aldzama. He works on embedded systems, PCB design, control systems, computer vision, and autonomous navigation, and has worked across marine robotics, offshore operations, smart manufacturing, aquaculture technology, and demolition robotics. He graduated in Electronics Engineering from PENS.",
       "id": "Muhammad Achad Ansori adalah R&D Robotics Engineer di PT Aldzama. Ia mengerjakan embedded system, desain PCB, sistem kontrol, computer vision, dan navigasi otonom, dengan pengalaman di robotika kelautan, operasi offshore, smart manufacturing, teknologi budidaya ikan, dan robot demolisi. Ia lulusan Teknik Elektronika PENS."
     },
-    "links": [["About", "/#about"], ["Experience & CV", "/cv/"]]
+    "links": [["About", "/#about"], ["Technical skills", "/#capabilities"], ["Experience & CV", "/cv/"]]
   },
   {
     "id": "current-role",
@@ -78,10 +78,34 @@
       "id": ["Bisa bahasa pemrograman apa?", "Bisa Python atau C++?", "Pakai tools software apa?"]
     },
     "a": {
-      "en": "Programming languages: C/C++, Python, JavaScript, and Bash. Tools: Git, Linux, ROS, OpenCV, YOLO, TensorFlow, and MQTT.",
-      "id": "Bahasa pemrograman: C/C++, Python, JavaScript, dan Bash. Tools: Git, Linux, ROS, OpenCV, YOLO, TensorFlow, dan MQTT."
+      "en": "Programming languages: C/C++, Python, JavaScript, and Bash. Tools: Git, Linux, Docker, ROS, OpenCV, YOLO, TensorFlow, and MQTT.",
+      "id": "Bahasa pemrograman: C/C++, Python, JavaScript, dan Bash. Tools: Git, Linux, Docker, ROS, OpenCV, YOLO, TensorFlow, dan MQTT."
     },
     "links": [["Technical skills", "/#capabilities"]]
+  },
+  {
+    "id": "cad",
+    "q": {
+      "en": ["Can he do mechanical design?", "Which CAD software does he use?", "Does he know SolidWorks?", "Can he make 3D models or technical drawings?"],
+      "id": ["Bisa desain mekanik?", "Bisa pakai software CAD?", "Bisa SolidWorks?", "Bisa bikin gambar teknik atau model 3D?"]
+    },
+    "a": {
+      "en": "Yes. He does mechanical design (CAD) in SolidWorks: 3D part modeling, assemblies, and technical drawings. He took a 12-day SolidWorks training in 2026.",
+      "id": "Bisa. Ia mengerjakan desain mekanik (CAD) di SolidWorks: pemodelan part 3D, assembly, dan gambar teknik. Ia mengikuti pelatihan SolidWorks selama 12 hari pada 2026."
+    },
+    "links": [["Technical skills", "/#capabilities"]]
+  },
+  {
+    "id": "hobbies",
+    "q": {
+      "en": ["What are his hobbies?", "What does he do outside work?", "Does he do any sports?"],
+      "id": ["Hobinya apa?", "Apa kegiatannya di luar kerja?", "Suka olahraga apa?"]
+    },
+    "a": {
+      "en": "Outside work he does endurance sport: long-distance road running, trail running on mountain trails, and long-distance cycling. His next goal is to become an ultra-trail runner.",
+      "id": "Di luar pekerjaan ia menekuni olahraga ketahanan: lari jarak jauh di jalan raya, trail running di jalur gunung, dan bersepeda jarak jauh. Target berikutnya adalah menjadi pelari ultra-trail."
+    },
+    "links": [["Life outside the lab", "/#hobbies"]]
   },
   {
     "id": "ros",
@@ -315,7 +339,7 @@
     "id": "languages",
     "q": {
       "en": ["What languages does he speak?", "Does he speak English?"],
-      "id": ["Bisa bahasa apa saja?", "Bisa bahasa Inggris?"]
+      "id": ["Menguasai bahasa asing apa?", "Bisa bahasa Inggris?"]
     },
     "a": {
       "en": "Bahasa Indonesia (native) and English (professional working proficiency).",

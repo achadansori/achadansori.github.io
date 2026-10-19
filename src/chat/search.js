@@ -43,7 +43,7 @@ export function semanticRank(index, query) {
 
 const STOP = new Set(('a an the is are was were be been do does did of to in on at for with and or but by from as it its this that these those what which who whom how where when why can could would should will has have had he his him she her you your i me my we our they them about any some there tell show give me please ' +
   'apa apakah siapa bagaimana gimana berapa mana kapan kenapa mengapa yang dan atau di ke dari untuk dengan pada ini itu ada adalah saja aja sih dong kah nya dia ia kamu anda saya aku tolong mau ingin bisa sudah belum pernah punya tentang ceritakan jelaskan sebutkan bikin buat membuat use used uses using pakai memakai menggunakan ' +
-  'sedang lagi dimana kemana darimana adakah ya yah nih kok deh sama juga aja apa2 ' +
+  'sedang lagi dimana kemana darimana adakah ya yah nih kok deh sama juga aja apa2 like likes suka ' +
   // The whole portfolio is about him, so his name says nothing about the topic.
   'ansori achad muhammad').split(' '));
 // Light stemming so kerja / bekerja / pekerjaan meet, and so do programmed / programming
@@ -102,10 +102,18 @@ export const forEmbedding = (s, lang) => lang === 'id'
   ? s.replace(new RegExp(NAME + 'nya\\b|' + NAME + '\\b', 'gi'), 'dia')
   : s.replace(new RegExp(NAME + "['’]s\\b", 'gi'), 'his').replace(new RegExp(NAME + '\\b', 'gi'), 'he');
 
+// Lower case, no punctuation: how a typed question is compared with the FAQ's own.
+export const normalizeQuestion = s => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+
 // Picks the reply. sem is semanticRank() output, or null before the model is ready,
-// in which case only the keyword ranking is used.
-export function choose(index, sem, lex) {
+// in which case only the keyword ranking is used. question enables the exact-match
+// shortcut, which answers questions made only of common words ("Dia bisa apa saja?")
+// that keyword search has nothing to go on for.
+export function choose(index, sem, lex, question = '') {
   const item = r => index.items[r.item];
+  const asked = normalizeQuestion(question);
+  const exact = asked ? index.items.findIndex(it => it.k === 'faq' && it.q?.includes(asked)) : -1;
+  if (exact >= 0) return { item: index.items[exact], score: 1, related: [] };
   const lexMax = lex[0]?.score || 0;
   const lexOf = new Map(lex.map(r => [r.item, r.score / lexMax]));
   let ranked, accept;
