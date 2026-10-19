@@ -41,7 +41,7 @@ const ID = {
  'PCB & electronics':'PCB & elektronika','Schematics and circuit board layout.':'Skematik dan layout papan sirkuit.',
  'EasyEDA · KiCad · Eagle · Component selection · Power electronics':'EasyEDA · KiCad · Eagle · Pemilihan komponen · Elektronika daya',
  'Mechanical design (CAD)':'Desain mekanik (CAD)','3D parts, assemblies, and technical drawings.':'Part 3D, assembly, dan gambar teknik.',
- 'SolidWorks (12-day training, 2026) · 3D modeling · Assemblies · Technical drawings':'SolidWorks (pelatihan 12 hari, 2026) · Pemodelan 3D · Assembly · Gambar teknik',
+ 'SolidWorks · 3D modeling · Assemblies · Technical drawings':'SolidWorks · Pemodelan 3D · Assembly · Gambar teknik',
  'Field engineering':'Rekayasa lapangan','Installation, testing, and troubleshooting.':'Instalasi, pengujian, dan troubleshooting.',
  'Wiring & panels · Motor drivers · Linux · Git · Docker · MQTT':'Wiring & panel · Motor driver · Linux · Git · Docker · MQTT',
  '04 / ARTICLES':'04 / ARTIKEL','Recent articles':'Artikel terbaru','All articles':'Semua artikel',

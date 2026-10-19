@@ -102,8 +102,11 @@ export const forEmbedding = (s, lang) => lang === 'id'
   ? s.replace(new RegExp(NAME + 'nya\\b|' + NAME + '\\b', 'gi'), 'dia')
   : s.replace(new RegExp(NAME + "['’]s\\b", 'gi'), 'his').replace(new RegExp(NAME + '\\b', 'gi'), 'he');
 
-// Lower case, no punctuation: how a typed question is compared with the FAQ's own.
-export const normalizeQuestion = s => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+// How a typed question is compared with the FAQ's own: lower case, no punctuation, and
+// without filler words, so "dia bisa apa", "Dia bisa apa saja?" and "dia bisa apa sih" meet.
+const FILLER = new Set('saja aja sih dong ya yah nih kah deh kok please tolong'.split(' '));
+export const normalizeQuestion = s => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
+  .split(' ').filter(w => !FILLER.has(w)).join(' ');
 
 // Picks the reply. sem is semanticRank() output, or null before the model is ready,
 // in which case only the keyword ranking is used. question enables the exact-match

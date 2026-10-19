@@ -3,7 +3,7 @@
     "id": "intro",
     "q": {
       "en": ["Who is Ansori?", "Who are you?", "Give me a quick introduction to Ansori", "What kind of engineer is he?", "What are his areas of expertise?", "What can he do?"],
-      "id": ["Siapa Ansori?", "Siapa kamu?", "Perkenalkan Ansori secara singkat", "Dia engineer apa?", "Bidang keahliannya apa?", "Dia bisa apa saja?", "Apa saja kemampuannya?"]
+      "id": ["Siapa Ansori?", "Siapa kamu?", "Perkenalkan Ansori secara singkat", "Dia engineer apa?", "Bidang keahliannya apa?", "Dia bisa apa saja?", "Dia jago di bidang apa?", "Apa saja kemampuannya?"]
     },
     "a": {
       "en": "Muhammad Achad Ansori is an R&D Robotics Engineer at PT Aldzama. He works on embedded systems, PCB design, control systems, computer vision, and autonomous navigation, and has worked across marine robotics, offshore operations, smart manufacturing, aquaculture technology, and demolition robotics. He graduated in Electronics Engineering from PENS.",
@@ -339,7 +339,7 @@
     "id": "languages",
     "q": {
       "en": ["What languages does he speak?", "Does he speak English?"],
-      "id": ["Menguasai bahasa asing apa?", "Bisa bahasa Inggris?"]
+      "id": ["Menguasai bahasa asing apa?", "Lancar berbahasa Inggris?"]
     },
     "a": {
       "en": "Bahasa Indonesia (native) and English (professional working proficiency).",
