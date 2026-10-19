@@ -1,6 +1,5 @@
 // English is the source text; this maps it to Indonesian. Missing keys fall back to English.
-// ponytail: project, article, and CV bodies in content.json stay English; add per-page
-// Indonesian HTML there if those pages need translating too.
+// Page bodies are translated separately in content.id.json.
 const ID = {
  'Projects':'Proyek','Capabilities':'Keahlian','About':'Tentang','Journal':'Jurnal','Contact':'Kontak',
  'Open menu':'Buka menu','Close menu':'Tutup menu',
@@ -60,6 +59,20 @@ const ID = {
  'projects':'proyek','articles':'artikel','ROBOTICS & ENGINEERING':'ROBOTIKA & REKAYASA','Read article':'Baca artikel',
  'No matches. Try another keyword.':'Tidak ada hasil. Coba kata kunci lain.',
  'PROJECT DOCUMENTATION':'DOKUMENTASI PROYEK','ENGINEERING JOURNAL':'JURNAL ENGINEERING','EXPERIENCE & EDUCATION':'PENGALAMAN & PENDIDIKAN',
+ 'Finding Your Ikigai':'Menemukan Ikigai-mu','ROBOTICS & PURPOSE':'ROBOTIKA & TUJUAN HIDUP',
+ 'Indonesia’s Offshore Renewable Energy Potential':'Potensi Energi Terbarukan Lepas Pantai Indonesia','ENERGY & EXPLORATION':'ENERGI & EKSPLORASI',
+ 'A Complete Guide to YOLOv11 Object Detection':'Panduan Lengkap Deteksi Objek YOLOv11',
+ 'Jan 08, 2026':'08 Jan 2026','Dec 28, 2025':'28 Des 2025','Nov 20, 2025':'20 Nov 2025',
+ 'artificial intelligence':'kecerdasan buatan','object detection':'deteksi objek','energy technology':'teknologi energi',
+ 'renewable energy':'energi terbarukan','offshore':'lepas pantai','maritime':'maritim','personal development':'pengembangan diri','career':'karier','philosophy':'filsafat',
+ 'Quick keyword search.':'Pencarian kata kunci cepat.','Quick keyword search':'Pencarian kata kunci cepat','Turn on smart search':'Aktifkan pencarian pintar',', once':', sekali saja',
+ 'Loading smart search…':'Memuat pencarian pintar…','Smart search on · runs in your browser':'Pencarian pintar aktif · berjalan di browser Anda',
+ "Smart search couldn't load, using keyword search.":'Pencarian pintar gagal dimuat, memakai pencarian kata kunci.','Try again':'Coba lagi',
+ 'Ask about my work':'Tanya tentang karya saya','PORTFOLIO ASSISTANT':'ASISTEN PORTOFOLIO','Ask about Ansori':'Tanya tentang Ansori','Close assistant':'Tutup asisten',
+ 'Searching':'Mencari','Your question':'Pertanyaan Anda','Send':'Kirim','Ask in English or Bahasa Indonesia…':'Tanya dalam Bahasa Indonesia atau English…',
+ 'Answers come only from this portfolio. For anything else,':'Jawaban hanya berasal dari portofolio ini. Untuk hal lain,','email Ansori':'kirim email ke Ansori',
+ "Hi! Ask me about Ansori's experience, projects, or skills. Bahasa Indonesia juga bisa.":'Halo! Tanyakan tentang pengalaman, proyek, atau keahlian Ansori. English is fine too.',
+ 'What does he do now?':'Apa pekerjaannya sekarang?','Does he have offshore experience?':'Pernah kerja di offshore?','Which projects use ROS?':'Project mana yang pakai ROS?','How can I contact him?':'Bagaimana cara menghubunginya?',
  'Back to overview':'Kembali ke ringkasan','Contact me':'Hubungi saya','Page not found.':'Halaman tidak ditemukan.'
 };
 export const translator = lang => s => lang==='id' && ID[s] || s;

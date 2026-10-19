@@ -17,7 +17,7 @@ function linkProps(href) {
   return {href};
 }
 
-export default function ChatWidget() {
+export default function ChatWidget({T}) {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([greeting]);
   const [input, setInput] = useState('');
@@ -138,33 +138,33 @@ export default function ChatWidget() {
   const onPanelClick = e => { if (e.target.closest('a') && !window.matchMedia('(min-width: 741px)').matches) setOpen(false); };
 
   const status = {
-    off: <>Quick keyword search. <button type="button" onClick={() => startModel()}><Sparkles size={13}/> Turn on smart search (~{MODEL_MB} MB, once)</button></>,
-    loading: <>Loading smart search… {Math.round(progress * 100)}%<span className="chat-progress"><span style={{width: `${progress * 100}%`}}/></span></>,
-    ready: <>Smart search on · runs in your browser</>,
-    failed: <>Smart search couldn't load, using keyword search. <button type="button" onClick={() => startModel()}>Try again</button><small className="chat-fail-reason">{failReason}</small></>,
-    unavailable: <>Quick keyword search</>
+    off: <>{T('Quick keyword search.')} <button type="button" onClick={() => startModel()}><Sparkles size={13}/> {T('Turn on smart search')} (~{MODEL_MB} MB{T(', once')})</button></>,
+    loading: <>{T('Loading smart search…')} {Math.round(progress * 100)}%<span className="chat-progress"><span style={{width: `${progress * 100}%`}}/></span></>,
+    ready: <>{T('Smart search on · runs in your browser')}</>,
+    failed: <>{T("Smart search couldn't load, using keyword search.")} <button type="button" onClick={() => startModel()}>{T('Try again')}</button><small className="chat-fail-reason">{failReason}</small></>,
+    unavailable: <>{T('Quick keyword search')}</>
   }[model];
 
   return <>
-    {!open && <button ref={launcherRef} className="chat-launcher" aria-label="Ask about my work" aria-expanded="false" aria-controls="chat-panel" onClick={() => setOpen(true)}><MessageSquare size={18}/><span>Ask about my work</span></button>}
+    {!open && <button ref={launcherRef} className="chat-launcher" aria-label={T('Ask about my work')} aria-expanded="false" aria-controls="chat-panel" onClick={() => setOpen(true)}><MessageSquare size={18}/><span>{T('Ask about my work')}</span></button>}
     {open && <section id="chat-panel" className="chat-panel" role="dialog" aria-labelledby="chat-title" onClick={onPanelClick}>
-      <div className="chat-head"><div><div className="eyebrow">PORTFOLIO ASSISTANT</div><h2 id="chat-title">Ask about Ansori</h2></div><button className="chat-close" aria-label="Close assistant" onClick={close}><X size={18}/></button></div>
+      <div className="chat-head"><div><div className="eyebrow">{T('PORTFOLIO ASSISTANT')}</div><h2 id="chat-title">{T('Ask about Ansori')}</h2></div><button className="chat-close" aria-label={T('Close assistant')} onClick={close}><X size={18}/></button></div>
       <div className="chat-status">{status}</div>
       <div className="chat-messages" ref={listRef} aria-live="polite">
         {messages.map((m, i) => <div key={i} className={'chat-msg ' + m.from}>
           {m.title && <strong>{m.title}</strong>}
-          <p>{m.text}</p>
+          <p>{i === 0 ? T(m.text) : m.text}</p>
           {m.links?.length > 0 && <div className="chat-links">{m.links.map(([label, href]) => <a key={href} {...linkProps(href)}>{label} <ArrowUpRight size={13}/></a>)}</div>}
           {m.related?.length > 0 && <div className="chat-related"><span>{m.relatedLabel}:</span>{m.related.map(r => <a key={r.href} href={r.href}>{r.label}</a>)}</div>}
         </div>)}
-        {busy && <div className="chat-msg bot typing" role="status" aria-label="Searching"><span/><span/><span/></div>}
-        {messages.length === 1 && <div className="chat-suggestions">{suggestions.map(s => <button key={s} type="button" onClick={() => ask(s)}>{s}</button>)}</div>}
+        {busy && <div className="chat-msg bot typing" role="status" aria-label={T('Searching')}><span/><span/><span/></div>}
+        {messages.length === 1 && <div className="chat-suggestions">{suggestions.map(s => <button key={s} type="button" onClick={() => ask(T(s))}>{T(s)}</button>)}</div>}
       </div>
       <form className="chat-input" onSubmit={e => { e.preventDefault(); ask(input); }}>
-        <input ref={inputRef} value={input} onChange={e => setInput(e.target.value)} maxLength={300} placeholder="Ask in English or Bahasa Indonesia…" aria-label="Your question"/>
-        <button type="submit" aria-label="Send" disabled={!input.trim() || busy}><Send size={17}/></button>
+        <input ref={inputRef} value={input} onChange={e => setInput(e.target.value)} maxLength={300} placeholder={T('Ask in English or Bahasa Indonesia…')} aria-label={T('Your question')}/>
+        <button type="submit" aria-label={T('Send')} disabled={!input.trim() || busy}><Send size={17}/></button>
       </form>
-      <p className="chat-note">Answers come only from this portfolio. For anything else, <a href="mailto:achad@achadansori.com">email Ansori</a>.</p>
+      <p className="chat-note">{T('Answers come only from this portfolio. For anything else,')} <a href="mailto:achad@achadansori.com">{T('email Ansori')}</a>.</p>
     </section>}
   </>;
 }
