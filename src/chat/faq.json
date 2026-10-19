@@ -90,8 +90,8 @@
       "id": ["Bisa desain mekanik?", "Bisa pakai software CAD?", "Bisa SolidWorks?", "Bisa bikin gambar teknik atau model 3D?"]
     },
     "a": {
-      "en": "Yes. He does mechanical design (CAD) in SolidWorks: 3D part modeling, assemblies, and technical drawings. He took a 12-day SolidWorks training in 2026.",
-      "id": "Bisa. Ia mengerjakan desain mekanik (CAD) di SolidWorks: pemodelan part 3D, assembly, dan gambar teknik. Ia mengikuti pelatihan SolidWorks selama 12 hari pada 2026."
+      "en": "Yes. He does mechanical design (CAD) in SolidWorks: 3D part modeling, assemblies, and technical drawings.",
+      "id": "Bisa. Ia mengerjakan desain mekanik (CAD) di SolidWorks: pemodelan part 3D, assembly, dan gambar teknik."
     },
     "links": [["Technical skills", "/#capabilities"]]
   },
