@@ -7,7 +7,11 @@ for(const route of new Set([...content.legacyPaths,'/projects/','/blog/','/cv/']
  if(route==='/')continue;
  const page=content.pages.find(p=>p.path===route);
  const title=page?.title || (route.startsWith('/blog')?'Journal':'Projects');
- const html=template.replace(/<title>.*?<\/title>/,`<title>${escape(title)} | Ansori</title>`);
+ // Link previews (LinkedIn, WhatsApp) read these tags without running the app.
+ const image=page?.html.match(/<img[^>]*src="(\/[^"]+)"/)?.[1];
+ const og={title:`${title} | Ansori`,description:page?.description,url:'https://achadansori.com'+route,image:image&&'https://achadansori.com'+image};
+ let html=template.replace(/<title>.*?<\/title>/,`<title>${escape(og.title)}</title>`);
+ for(const [k,v] of Object.entries(og))if(v)html=html.replace(new RegExp(`<meta property="og:${k}" content="[^"]*"/>`),`<meta property="og:${k}" content="${escape(v)}"/>`);
  const out=path.join('dist',route,'index.html');fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,html);
 }
 fs.writeFileSync('dist/404.html',template);
