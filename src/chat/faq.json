@@ -86,12 +86,12 @@
   {
     "id": "cad",
     "q": {
-      "en": ["Can he do mechanical design?", "Which CAD software does he use?", "Does he know SolidWorks?", "Can he make 3D models or technical drawings?"],
-      "id": ["Bisa desain mekanik?", "Bisa pakai software CAD?", "Bisa SolidWorks?", "Bisa bikin gambar teknik atau model 3D?"]
+      "en": ["Can he do mechanical design?", "Which CAD software does he use?", "Does he know SolidWorks?", "Is he SolidWorks certified?", "Can he make 3D models or technical drawings?"],
+      "id": ["Bisa desain mekanik?", "Bisa pakai software CAD?", "Bisa SolidWorks?", "Punya sertifikat SolidWorks?", "Bisa bikin gambar teknik atau model 3D?"]
     },
     "a": {
-      "en": "Yes. He does mechanical design (CAD) in SolidWorks: 3D part modeling, assemblies, and technical drawings.",
-      "id": "Bisa. Ia mengerjakan desain mekanik (CAD) di SolidWorks: pemodelan part 3D, assembly, dan gambar teknik."
+      "en": "Yes. He does mechanical design (CAD) in SolidWorks: 3D part modeling, assemblies, and technical drawings. He is a Certified SOLIDWORKS Associate (CSWA), issued by Dassault Systèmes in Oct 2026.",
+      "id": "Bisa. Ia mengerjakan desain mekanik (CAD) di SolidWorks: pemodelan part 3D, assembly, dan gambar teknik. Ia memegang sertifikasi Certified SOLIDWORKS Associate (CSWA) dari Dassault Systèmes, terbit Oktober 2026."
     },
     "links": [["Technical skills", "/#capabilities"]]
   },
@@ -330,8 +330,8 @@
       "id": ["Punya sertifikasi?", "Punya sertifikat keselamatan?", "Pernah ikut pelatihan sea survival?"]
     },
     "a": {
-      "en": "He holds the Sea Survival and Offshore Emergency Procedure certificate from PT Global Saftindo, valid Jul 2024 to Jul 2027 (credential GS-ADM-024-3594).",
-      "id": "Ia memiliki sertifikat Sea Survival and Offshore Emergency Procedure dari PT Global Saftindo, berlaku Juli 2024 sampai Juli 2027 (kredensial GS-ADM-024-3594)."
+      "en": "He holds two certifications: Certified SOLIDWORKS Associate (CSWA) from Dassault Systèmes, issued Oct 2026 (credential C-3YKH45GCL6), and the Sea Survival and Offshore Emergency Procedure certificate from PT Global Saftindo, valid Jul 2024 to Jul 2027 (credential GS-ADM-024-3594).",
+      "id": "Ia memiliki dua sertifikasi: Certified SOLIDWORKS Associate (CSWA) dari Dassault Systèmes, terbit Oktober 2026 (kredensial C-3YKH45GCL6), dan sertifikat Sea Survival and Offshore Emergency Procedure dari PT Global Saftindo, berlaku Juli 2024 sampai Juli 2027 (kredensial GS-ADM-024-3594)."
     },
     "links": [["Experience & CV", "/cv/"]]
   },

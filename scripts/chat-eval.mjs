@@ -56,6 +56,8 @@ const cases = [
   ['kemampuannya apa aja', ['intro']],
   ['Bisa bahasa apa saja?', ['languages', 'skills-programming']], // spoken or programming: both fair
   ['Pakai software CAD apa?', ['cad']],
+  ['Does he have CSWA?', ['cad', 'certifications']],
+  ['punya sertifikat solidworks?', ['cad', 'certifications']],
   ['Hobinya apa aja?', ['hobbies']],
   ['Does he like running?', ['hobbies']],
   // The suggestion buttons as shown in the Indonesian interface (src/i18n.js).
