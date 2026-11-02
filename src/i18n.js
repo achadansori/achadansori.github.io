@@ -17,7 +17,7 @@ const ID = {
  'Experience & CV':'Pengalaman & CV','ROBOTICS DEVELOPMENT':'PENGEMBANGAN ROBOTIKA',
  '02 / SELECTED WORK':'02 / KARYA PILIHAN','Selected projects':'Proyek pilihan',
  'Autonomous vehicles, underwater inspection, and computer vision projects.':'Proyek kendaraan otonom, inspeksi bawah air, dan computer vision.',
- 'View project: ':'Lihat proyek: ','My contribution':'Kontribusi saya','Result':'Hasil','All projects':'Semua proyek',
+ 'View project: ':'Lihat proyek: ','My contribution':'Kontribusi saya','Result':'Hasil','All projects':'Semua proyek','View all projects':'Lihat semua proyek',
  'Autonomous navigation and collision avoidance.':'Navigasi otonom dan penghindaran tabrakan.','Autonomous systems':'Sistem otonom',
  'Autonomous navigation':'Navigasi otonom','Collision avoidance':'Penghindaran tabrakan',
  'Integrated ROS, computer vision, and LiDAR.':'Mengintegrasikan ROS, computer vision, dan LiDAR.',
