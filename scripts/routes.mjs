@@ -20,5 +20,5 @@ fs.writeFileSync('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urls
 // The chat assistant's ONNX runtime is a 27 MB .wasm that gzips to 7 MB. The module
 // guards keep the site up on a server without mod_deflate or mod_filter.
 const compression='AddType application/wasm .wasm\n<IfModule mod_deflate.c>\n<IfModule mod_filter.c>\nAddOutputFilterByType DEFLATE application/wasm application/json text/javascript application/javascript\n</IfModule>\n</IfModule>\n';
-fs.writeFileSync('dist/.htaccess','RewriteEngine On\nRewriteCond %{HTTP_HOST} ^www\\.achadansori\\.com$ [NC]\nRewriteRule ^(.*)$ https://achadansori.com/$1 [R=301,L]\nErrorDocument 404 /404.html\n'+compression);
+fs.writeFileSync('dist/.htaccess','RewriteEngine On\nRewriteCond %{HTTP_HOST} ^www\\.achadansori\\.com$ [NC]\nRewriteRule ^(.*)$ https://achadansori.com/$1 [R=301,L]\nErrorDocument 404 /404.html\n# Project URLs used to carry a letter prefix (/projects/k_jalavahana/); keep old links working.\nRewriteRule ^projects/[a-q]_([a-z0-9_]+)/?$ /projects/$1/ [R=301,L]\n'+compression);
 console.log('Static route entrypoints generated.');
