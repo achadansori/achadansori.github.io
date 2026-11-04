@@ -95,3 +95,6 @@ nav .nav-contact{display:none}
    ponytail: one filter for the whole theme; switch to color tokens if the palette ever gains hues. */
 html[data-theme=light]{filter:invert(1) hue-rotate(180deg)}
 html[data-theme=light] :is(img,video,iframe,picture){filter:invert(1) hue-rotate(180deg)!important}
+.robot3d{aspect-ratio:3/2;background:#fff;cursor:grab}.robot3d:active{cursor:grabbing}.robot3d canvas{display:block}.robot3d[hidden]{display:none}
+@media(max-width:740px){.robot3d{aspect-ratio:7/6}}
+.project-image img[src$="demolition_sim/thumbnail.jpg"]{object-fit:contain;background:#fff}

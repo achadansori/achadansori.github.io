@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {ArrowUpRight, ArrowLeft, Search, Download} from 'lucide-react';
 import content from './content.json';
 export function Page({path,T,local}) {
@@ -7,6 +7,14 @@ export function Page({path,T,local}) {
  // Indonesian pages replace title, description and html when loaded.
  const localize=p=>p&&local?.[p.path]?{...p,...local[p.path]}:p;
  const page=localize(content.pages.find(p=>p.path===normalized));
+ // A page can ask for a live 3D model; three.js only loads when one does.
+ useEffect(()=>{
+  const figure=document.querySelector('[data-robot3d]');
+  if(!figure)return;
+  let dispose,cancelled=false;
+  import('./robot3d.js').then(({mountRobot3D})=>{if(!cancelled)dispose=mountRobot3D(figure);});
+  return ()=>{cancelled=true;dispose?.();};
+ },[page?.html]);
  const projectIndex=normalized==='/projects/';
  const blogIndex=normalized.startsWith('/blog/')&&!page;
  if(projectIndex||blogIndex){
