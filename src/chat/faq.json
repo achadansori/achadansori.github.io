@@ -294,8 +294,8 @@
       "id": ["Pernah menulis paper?", "Ada paper teknisnya?", "Punya publikasi riset?"]
     },
     "a": {
-      "en": "The Jaladhi project page includes the full IEEE-format technical paper covering the vehicle design, sensor fusion, field trials, and collision-avoidance results. He also writes articles on robotics and computer vision in the journal section.",
-      "id": "Halaman project Jaladhi memuat paper teknis lengkap berformat IEEE yang membahas desain kapal, sensor fusion, uji lapangan, dan hasil penghindaran tabrakan. Ia juga menulis artikel tentang robotika dan computer vision di bagian journal."
+      "en": "The Jaladhi project page includes the full IEEE-format technical paper covering the vehicle design, sensor fusion, field trials, and collision-avoidance results. He also writes articles on robotics and computer vision in the blog section.",
+      "id": "Halaman project Jaladhi memuat paper teknis lengkap berformat IEEE yang membahas desain kapal, sensor fusion, uji lapangan, dan hasil penghindaran tabrakan. Ia juga menulis artikel tentang robotika dan computer vision di bagian blog."
     },
     "links": [["Jaladhi paper", "/projects/jaladhi/"], ["Articles", "/blog/"]]
   },

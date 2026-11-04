@@ -6,7 +6,7 @@ const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"',
 for(const route of new Set([...content.legacyPaths,'/projects/','/blog/','/cv/'])){
  if(route==='/')continue;
  const page=content.pages.find(p=>p.path===route);
- const title=page?.title || (route.startsWith('/blog')?'Journal':'Projects');
+ const title=page?.title || (route.startsWith('/blog')?'Blog':'Projects');
  // Link previews (LinkedIn, WhatsApp) read these tags without running the app.
  const image=page?.html.match(/<img[^>]*src="(\/[^"]+)"/)?.[1];
  const og={title:`${title} | Ansori`,description:page?.description,url:'https://achadansori.com'+route,image:image&&'https://achadansori.com'+image};

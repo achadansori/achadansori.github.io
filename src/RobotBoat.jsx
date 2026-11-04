@@ -1,25 +1,53 @@
 import {useEffect, useRef} from 'react';
+import DemolitionRobot from './DemolitionRobot';
+
+// Where the land ends, as a fraction of the world width; keep in step with .voyage-land in style.css.
+const SHORE = .42;
 
 export default function RobotBoat() {
  const sectionRef = useRef(null);
  const sceneRef = useRef(null);
+ const worldRef = useRef(null);
  const boatRef = useRef(null);
+ const hudRef = useRef(null);
 
  useEffect(() => {
   const section = sectionRef.current;
   const scene = sceneRef.current;
+  const world = worldRef.current;
   const boat = boatRef.current;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let frame = 0;
+  let lastProgress = null;
+  let stopTimer = 0;
+  const setStatus = moving => {
+   hudRef.current.textContent = moving ? 'UNDERWAY' : 'STATION KEEPING';
+  };
   const update = () => {
    frame = 0;
    const bounds = section.getBoundingClientRect();
    // Traverse while the section passes through the viewport, without pinning it.
    const viewportHeight = window.innerHeight;
-   const progress = reducedMotion.matches ? 0.5 : Math.max(0, Math.min(1, (viewportHeight - bounds.top) / Math.max(1, viewportHeight + bounds.height)));
-   const travel = Math.max(0, scene.clientWidth - boat.clientWidth - 48);
-   boat.style.transform = `translate3d(${24 + travel * progress}px, -80%, 0)`;
+   // The section is only on screen for the middle of the scroll, so finish the voyage within that range.
+   const progress = reducedMotion.matches ? 0.5 : Math.max(0, Math.min(1, ((viewportHeight - bounds.top) / Math.max(1, viewportHeight + bounds.height) - .15) / .65));
+   const start = world.clientWidth * SHORE;
+   const travel = Math.max(0, world.clientWidth - start - boat.clientWidth - 24);
+   // On screens narrower than the world, the view pans from the land to the sea once the arm has finished its scoop.
+   world.style.transform = `translate3d(${(scene.clientWidth - world.clientWidth) * Math.max(0, Math.min(1, (progress - .54) / .31))}px, 0, 0)`;
+   boat.style.transform = `translate3d(${start + travel * progress}px, -80%, 0)`;
    scene.style.setProperty('--voyage', `${progress * 100}%`);
+   scene.style.setProperty('--progress', progress);
+   if (lastProgress !== null && progress !== lastProgress) {
+    boat.classList.add('moving');
+    boat.classList.toggle('astern', progress < lastProgress);
+    clearTimeout(stopTimer);
+    stopTimer = setTimeout(() => {
+     boat.classList.remove('moving');
+     setStatus(false);
+    }, 220);
+    setStatus(true);
+   } else if (lastProgress === null) setStatus(false);
+   lastProgress = progress;
   };
   const schedule = () => {if (!frame) frame = requestAnimationFrame(update);};
   const observer = new ResizeObserver(schedule);
@@ -31,6 +59,7 @@ export default function RobotBoat() {
   schedule();
   return () => {
    cancelAnimationFrame(frame);
+   clearTimeout(stopTimer);
    observer.disconnect();
    window.removeEventListener('scroll', schedule);
    window.removeEventListener('resize', schedule);
@@ -38,11 +67,40 @@ export default function RobotBoat() {
   };
  }, []);
 
- return <section className="robot-voyage" ref={sectionRef} aria-label="Autonomous surface vehicle">
+ return <section className="robot-voyage" ref={sectionRef} aria-label="Autonomous surface vehicle, underwater ROV and demolition robot">
   <div className="voyage-scene" ref={sceneRef}>
-   <div className="voyage-water" aria-hidden="true"><span/><span/><span/></div>
+   <div className="voyage-hud" aria-hidden="true"><b>JALAVAHANA ASV</b><span ref={hudRef}/></div>
+   <div className="voyage-world" ref={worldRef}>
+   <div className="voyage-water" aria-hidden="true"><span/><span/><span/><span/><span/></div>
    <div className="voyage-boat" ref={boatRef}>
+    <div className="voyage-wake" aria-hidden="true"/>
+    {/* Same coordinates as the boat drawing; the tether starts behind the hull so bobbing never opens a gap. */}
+    <svg className="voyage-rov" viewBox="0 0 440 200" role="img" aria-label="BlueROV-style underwater ROV connected to the boat by a tether">
+     <defs><linearGradient id="rov-light" gradientUnits="userSpaceOnUse" x1="247" x2="380" y1="0" y2="0"><stop offset="0" stopColor="#fff" stopOpacity=".3"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient></defs>
+     <path d="M176 170 C130 240 230 310 130 385 C112 398 110 420 131 427" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" opacity=".75"/>
+     <g className="voyage-rov-body" stroke="#fff" strokeLinejoin="round">
+      <path d="M247 429 L380 398 V460 Z" fill="url(#rov-light)" stroke="none"/>
+      {/* BlueROV-style side profile: foam block on top, vertical thruster ducts, open side plate. */}
+      <path d="M152 398 V392 H170 V398 M214 398 V392 H232 V398" fill="#050505" strokeWidth="2"/>
+      <rect x="146" y="398" width="92" height="12" rx="3" fill="#f5f5f5" strokeWidth="1.5"/>
+      <rect x="136" y="410" width="104" height="44" rx="6" fill="#050505" strokeWidth="3"/>
+      {/* Main electronics tube with rear end cap and clear front dome holding the camera. */}
+      <rect x="130" y="420" width="9" height="18" rx="2" fill="#050505" strokeWidth="2"/>
+      <rect x="139" y="420" width="99" height="18" fill="#f5f5f5" strokeWidth="1.5"/>
+      <path d="M238 420 A9 9 0 0 1 238 438 Z" fill="#050505" strokeWidth="2"/>
+      <circle cx="240" cy="429" r="2.5" fill="#fff" stroke="none"/>
+      {/* Battery tube, horizontal thrusters and front light. */}
+      <rect x="158" y="442" width="58" height="8" rx="4" fill="#050505" strokeWidth="1.5"/>
+      <rect x="140" y="441" width="13" height="10" rx="2" fill="#f5f5f5" strokeWidth="1"/>
+      <rect x="222" y="441" width="13" height="10" rx="2" fill="#f5f5f5" strokeWidth="1"/>
+      <circle cx="233" cy="415" r="2.5" fill="#fff" stroke="none"/>
+      <path d="M150 454 V459 M226 454 V459" fill="none" strokeWidth="3" strokeLinecap="round"/>
+     </g>
+    </svg>
     <svg viewBox="0 0 440 200" role="img" aria-label="Side-view illustration inspired by Jalavahana ASV, with an electronics enclosure, a frame-mounted Intel RealSense-style camera in side profile, a lower frame-mounted LiDAR ahead of the mast, wind sensor and underwater thrusters">
+     {/* LiDAR scan fan; the SVG overflows so it can reach past the bow. */}
+     <defs><linearGradient id="lidar-fade" gradientUnits="userSpaceOnUse" x1="263" x2="560" y1="0" y2="0"><stop offset="0" stopColor="#fff" stopOpacity=".32"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient></defs>
+     <path className="voyage-scan" d="M263 68 L560 22 V108 Z" fill="url(#lidar-fade)"/>
      {/* Side profile based on the Jalavahana drawing in the project assets; bow faces right. */}
      <g stroke="#fff" strokeLinejoin="round">
       <path d="M91 131 H393 Q352 164 292 166 H91 Z" fill="#050505" opacity=".4"/>
@@ -104,6 +162,10 @@ export default function RobotBoat() {
       <path d="M21 172 H68 M43 182 H77 M373 174 H412" opacity=".3"/>
      </g>
     </svg>
+   </div>
+   {/* After the boat, so the land covers the wake trailing behind it. */}
+   <svg className="voyage-land" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H860 C910 60 960 250 1000 400 H0 Z" fill="#101010" stroke="#ffffff60" vectorEffect="non-scaling-stroke"/></svg>
+   <DemolitionRobot/>
    </div>
    <div className="voyage-progress" aria-hidden="true"/>
   </div>

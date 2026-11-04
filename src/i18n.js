@@ -1,7 +1,7 @@
 // English is the source text; this maps it to Indonesian. Missing keys fall back to English.
 // Page bodies are translated separately in content.id.json.
 const ID = {
- 'Projects':'Proyek','Capabilities':'Keahlian','About':'Tentang','Journal':'Jurnal','Contact':'Kontak',
+ 'Projects':'Proyek','Capabilities':'Keahlian','About':'Tentang','Contact':'Kontak',
  'Open menu':'Buka menu','Close menu':'Tutup menu',
  'Switch to light mode':'Ganti ke mode terang','Switch to dark mode':'Ganti ke mode gelap','Baca dalam Bahasa Indonesia':'Read in English',
  'R&D ROBOTICS ENGINEER AT PT ALDZAMA':'R&D ROBOTICS ENGINEER DI PT ALDZAMA',
@@ -44,7 +44,7 @@ const ID = {
  'SolidWorks (CSWA) · 3D modeling · Assemblies · Technical drawings':'SolidWorks (CSWA) · Pemodelan 3D · Assembly · Gambar teknik',
  'Field engineering':'Rekayasa lapangan','Installation, testing, and troubleshooting.':'Instalasi, pengujian, dan troubleshooting.',
  'Wiring & panels · Motor drivers · Linux · Git · Docker · MQTT':'Wiring & panel · Motor driver · Linux · Git · Docker · MQTT',
- '04 / ARTICLES':'04 / ARTIKEL','Recent articles':'Artikel terbaru','All articles':'Semua artikel',
+ 'All articles':'Semua artikel',
  '05 / BEYOND WORK':'05 / DI LUAR PEKERJAAN','Life outside the lab':'Di luar lab',
  'Outside work I go long: road running, trail running, and cycling. Endurance sport keeps my life in balance, and my next goal is to become an ultra-trail runner.':'Di luar pekerjaan, saya menempuh jarak jauh: lari, trail run, dan bersepeda. Olahraga ketahanan menjaga keseimbangan hidup saya, dan target saya berikutnya adalah menjadi ultra-trail runner.',
  'Long-distance running':'Lari jarak jauh','Long road runs that build endurance and a steady pace.':'Lari jarak jauh di jalan untuk membangun daya tahan dan ritme yang stabil.',
@@ -52,13 +52,13 @@ const ID = {
  'Cycling':'Bersepeda','Long-distance rides.':'Bersepeda jarak jauh.',
  'LONG DISTANCE':'JARAK JAUH','GOAL: ULTRA-TRAIL':'TARGET: ULTRA-TRAIL',
  'CONTACT':'KONTAK','Get in touch':'Hubungi saya','Email Ansori':'Kirim email ke Ansori','Back to top ↑':'Kembali ke atas ↑',
- 'Back home':'Kembali ke beranda','PROJECTS':'PROYEK','ARTICLES':'ARTIKEL','Articles':'Artikel',
+ 'Back home':'Kembali ke beranda','PROJECTS':'PROYEK','Articles':'Artikel',
  'Projects from university competitions, research, and industrial deployments.':'Proyek dari kompetisi universitas, riset, dan penerapan di industri.',
  'My writing on robotics, computer vision, energy, and career.':'Tulisan saya tentang robotika, computer vision, energi, dan karier.',
  'Search projects…':'Cari proyek…','Search articles…':'Cari artikel…','Search projects':'Cari proyek','Search articles':'Cari artikel',
  'projects':'proyek','articles':'artikel','ROBOTICS & ENGINEERING':'ROBOTIKA & REKAYASA','Read article':'Baca artikel',
  'No matches. Try another keyword.':'Tidak ada hasil. Coba kata kunci lain.',
- 'PROJECT DOCUMENTATION':'DOKUMENTASI PROYEK','ENGINEERING JOURNAL':'JURNAL ENGINEERING','EXPERIENCE & EDUCATION':'PENGALAMAN & PENDIDIKAN',
+ 'PROJECT DOCUMENTATION':'DOKUMENTASI PROYEK','EXPERIENCE & EDUCATION':'PENGALAMAN & PENDIDIKAN',
  'Finding Your Ikigai':'Menemukan Ikigai-mu','ROBOTICS & PURPOSE':'ROBOTIKA & TUJUAN HIDUP',
  'Indonesia’s Offshore Renewable Energy Potential':'Potensi Energi Terbarukan Lepas Pantai Indonesia','ENERGY & EXPLORATION':'ENERGI & EKSPLORASI',
  'A Complete Guide to YOLOv11 Object Detection':'Panduan Lengkap Deteksi Objek YOLOv11',
